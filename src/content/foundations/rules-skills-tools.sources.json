@@ -148,11 +148,11 @@
       "dirty": true,
       "observedAt": "2026-08-15"
     },
-    "path": "packages/agent-runtime/src/adapters/acp/adapter.ts",
-    "symbol": "buildSkillInstructions",
+    "path": "packages/agent-runtime/src/acp/adapter.ts",
+    "symbol": "buildAcpSkillsInstructions",
     "lineStart": 450,
     "lineEnd": 488,
-    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "windowSha256": "e69ab058e48ba9567083c6ff4cc2ca690ea42586ee6237d8357019e283bd933b",
     "public": {
       "status": "unverified",
       "url": null,
