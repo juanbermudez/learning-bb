@@ -1,0 +1,209 @@
+[
+  {
+    "id": "secondary-panel",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadSecondaryPanel resolves info, diff, plugin, file, browser, terminal, and new-tab panel kinds and uses a wide aside or compact drawer.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/ThreadSecondaryPanel.tsx",
+    "symbol": "ThreadSecondaryPanel",
+    "lineStart": 212,
+    "lineEnd": 291,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "panel-toolbar",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The secondary panel toolbar exposes Info and Diff views, file tabs, New tab, and collapse or hide controls.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/ThreadSecondaryPanel.tsx",
+    "symbol": "ThreadSecondaryPanel.toolbar",
+    "lineStart": 560,
+    "lineEnd": 639,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "panel-content",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadSecondaryPanel exposes a drawer-aware panel prop and renders aside content that the caller can place in a compact drawer or desktop panel group.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/ThreadSecondaryPanel.tsx",
+    "symbol": "ThreadSecondaryPanelProps",
+    "lineStart": 294,
+    "lineEnd": 359,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "panel-browser-settle",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadSecondaryPanel re-measures browser bounds after the panel transition settles so a native browser view does not retain stale geometry.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/ThreadSecondaryPanel.tsx",
+    "symbol": "ThreadSecondaryPanel.handlePanelTransitionEnd",
+    "lineStart": 421,
+    "lineEnd": 447,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "tab-content",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Secondary panel tab content loads environment, project, host, and storage file metadata and content, with diff patches fetched when needed.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/ThreadSecondaryPanelTabContent.tsx",
+    "symbol": "ThreadSecondaryPanelTabContent",
+    "lineStart": 100,
+    "lineEnd": 179,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "new-tab",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "NewTabPage presents file search as primary and browser, terminal, and plugin actions as secondary in-page actions.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/NewTabPage.tsx",
+    "symbol": "NewTabPage",
+    "lineStart": 1,
+    "lineEnd": 61,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "environment-picker",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "EnvironmentPicker represents local and remote work, source and host availability, worktrees, and work-location choices.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/pickers/EnvironmentPicker.tsx",
+    "symbol": "EnvironmentPicker",
+    "lineStart": 115,
+    "lineEnd": 194,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "worktree-picker",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "WorktreePicker supplies reusable worktree candidates with host, branch, and representative thread metadata.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/pickers/WorktreePicker.tsx",
+    "symbol": "WorktreePicker",
+    "lineStart": 17,
+    "lineEnd": 96,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "thread-read-only",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadDetailView can make a thread read-only when its environment is gone or unavailable.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/ThreadDetailView.tsx",
+    "symbol": "ThreadDetailView.environmentStatus",
+    "lineStart": 2429,
+    "lineEnd": 2485,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

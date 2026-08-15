@@ -1,0 +1,232 @@
+[
+  {
+    "id": "timeline-content",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadTimelinePanelContent connects timeline control to display status and renders loading, error, missing, and active-work states.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/thread/timeline/ThreadTimelinePanelContent.tsx",
+    "symbol": "ThreadTimelinePanelContent",
+    "lineStart": 48,
+    "lineEnd": 127,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-surface",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadTimelineSurface can show stop-requested state, load older rows, display connection notices, and render ongoing activity.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/thread/timeline/ThreadTimelineSurface.tsx",
+    "symbol": "ThreadTimelineSurface",
+    "lineStart": 93,
+    "lineEnd": 172,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-rows",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadTimelineRows maps work, conversation, system, command, tool, web, workflow, approval, question, and lifecycle event families to visible rows.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/thread/timeline/ThreadTimelineRows.tsx",
+    "symbol": "ThreadTimelineRows",
+    "lineStart": 1184,
+    "lineEnd": 1263,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "expandable-row",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ExpandableTimelineRow supports manual, automatic, and terminal expansion with keyboard activation.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/thread/timeline/ExpandableTimelineRow.tsx",
+    "symbol": "ExpandableTimelineRow",
+    "lineStart": 31,
+    "lineEnd": 110,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "thread-header",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadDetailHeader owns title, rename, workspace and git controls, panel toggles, pane actions, and responsive overflow.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/ThreadDetailHeader.tsx",
+    "symbol": "ThreadDetailHeader",
+    "lineStart": 56,
+    "lineEnd": 135,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "prompt-area",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadDetailPromptArea renders pending interaction, queued prompt, background, plan, goal, todo, and context states around follow-up controls.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/ThreadDetailPromptArea.tsx",
+    "symbol": "ThreadDetailPromptArea",
+    "lineStart": 1440,
+    "lineEnd": 1519,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "prompt-interaction-state",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The thread prompt area selects between normal follow-up behavior and a pending interaction composer based on thread state.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/ThreadDetailPromptArea.tsx",
+    "symbol": "ThreadDetailPromptArea.pendingInteraction",
+    "lineStart": 653,
+    "lineEnd": 686,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "follow-up-submission",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Follow-up submission classifies active, reconnecting, provisioning, starting, and waiting-for-host states as queueable while stop or interaction states block ordinary send.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/threadDetailPromptSubmission.ts",
+    "symbol": "buildFollowUpSubmitMode",
+    "lineStart": 111,
+    "lineEnd": 190,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-projection",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server builds a bounded timeline projection and can return a delta or full fetch for the app timeline query.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/timeline.ts",
+    "symbol": "buildThreadTimelineInternal",
+    "lineStart": 1617,
+    "lineEnd": 1696,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "thread-read-only",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadDetailView can make a thread read-only when its environment is gone or unavailable.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/ThreadDetailView.tsx",
+    "symbol": "ThreadDetailView.environmentStatus",
+    "lineStart": 2429,
+    "lineEnd": 2485,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]
