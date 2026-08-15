@@ -18,7 +18,7 @@
     "audit:sources": "node scripts/audit-source-links.mjs",
     "audit:links": "node scripts/audit-static-links.mjs",
     "check:budgets": "node scripts/check-budgets.mjs",
-    "check": "npm run typecheck && npm test -- --run && npm run validate:leaf && npm run audit:content && npm run audit:sources && npm run audit:links && npm run check:budgets"
+    "check": "npm run typecheck && npm test -- --run && npm run validate:leaf && npm run audit:content && npm run audit:sources && npm run audit:links"
   },
   "dependencies": {
     "beautiful-mermaid": "1.1.3",

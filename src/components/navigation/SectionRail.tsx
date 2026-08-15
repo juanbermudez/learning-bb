@@ -5,9 +5,9 @@ import { RailIcon, SearchIcon } from './icons'
 
 export function SectionRail({ activeSection, onSearch }: { activeSection?: SectionDefinition; onSearch: () => void }) {
   return (
-    <aside className="section-rail" aria-label="Documentation sections">
+    <header className="section-rail">
       <Link to="/" className="brand-mark" aria-label="Learning BB home" title="Learning BB">L·B</Link>
-      <div className="section-rail__links">
+      <nav className="section-rail__links" aria-label="Documentation sections">
         <button type="button" className="rail-link" onClick={onSearch} aria-label="Search documentation" title="Search (Ctrl+K)">
           <span className="rail-link__icon"><SearchIcon /></span><span>Search</span>
         </button>
@@ -23,11 +23,11 @@ export function SectionRail({ activeSection, onSearch }: { activeSection?: Secti
             <span>{section.shortLabel}</span>
           </Link>
         ))}
-      </div>
+      </nav>
       <div className="section-rail__bottom">
         <ThemeControl compact />
         <span className="snapshot-dot" title={SNAPSHOT_LABEL}>Snapshot</span>
       </div>
-    </aside>
+    </header>
   )
 }

@@ -21,7 +21,12 @@ export const SECTION_DEFINITIONS: readonly SectionDefinition[] = [
 
 export const SNAPSHOT_LABEL = 'BB fork feature/bots · 3a66656a0 + local changes · observed 2026-08-15'
 
+export function headingRoute(pathname: string, headingId: string): string {
+  return `${pathname}?${new URLSearchParams({ heading: headingId }).toString()}`
+}
+
 export function sectionForPath(pathname: string): SectionDefinition | undefined {
+  if (pathname === '/') return SECTION_DEFINITIONS.find((section) => section.id === 'orientation')
   const match = SECTION_DEFINITIONS.find((section) => pathname.startsWith(`/${section.id}`))
   return match
 }

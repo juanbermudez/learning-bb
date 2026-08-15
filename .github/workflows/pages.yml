@@ -32,6 +32,8 @@ jobs:
         run: npm run check
       - name: Build the Pages artifact once
         run: npm run build
+      - name: Check production budgets
+        run: npm run check:budgets
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
       - name: Upload the immutable Pages artifact

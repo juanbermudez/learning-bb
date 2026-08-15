@@ -1,11 +1,12 @@
 // @vitest-environment jsdom
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi, type Mock } from 'vitest'
-import { MemoryRouter, useNavigate } from 'react-router-dom'
+import { MemoryRouter, useLocation, useNavigate } from 'react-router-dom'
 import type { ComponentType } from 'react'
 import type { PageMeta } from '../content/schema'
 import App from './App'
 import { DocArticle } from '../components/content/DocArticle'
+import { PageSection } from '../components/content/PageSection'
 import { ThemeProvider } from '../components/theme/ThemeProvider'
 
 const testRegistry = vi.hoisted(() => ({ entries: [] as Array<{ meta: PageMeta; load: () => Promise<{ default: ComponentType }> }> }))
@@ -82,7 +83,7 @@ const UNUSED_META: PageMeta = {
 
 function makePage(meta: PageMeta, body: string): ComponentType {
   return function TestPage() {
-    return <DocArticle meta={meta}><p>{body}</p></DocArticle>
+    return <DocArticle meta={meta}><PageSection id={meta.headings[0].id} title={meta.headings[0].title}><p>{body}</p></PageSection></DocArticle>
   }
 }
 
@@ -101,14 +102,20 @@ let unusedDeferred: Deferred<PageModuleFixture>
 
 function NavigationHarness() {
   const navigate = useNavigate()
-  return <button type="button" data-testid="go-runtime" onClick={() => navigate(RUNTIME_META.route)}>Go to Runtime</button>
+  return <><button type="button" data-testid="go-runtime" onClick={() => navigate(RUNTIME_META.route)}>Go to Runtime</button><button type="button" data-testid="go-back" onClick={() => navigate(-1)}>Back</button><button type="button" data-testid="go-forward" onClick={() => navigate(1)}>Forward</button></>
 }
 
-function renderApp(initialRoute: string) {
+function LocationProbe() {
+  const location = useLocation()
+  return <output data-testid="location">{location.pathname}{location.search}</output>
+}
+
+function renderApp(initialRoute: string, includeLocationProbe = false) {
   return render(
     <MemoryRouter initialEntries={[initialRoute]}>
       <ThemeProvider>
         <NavigationHarness />
+        {includeLocationProbe ? <LocationProbe /> : null}
         <App />
       </ThemeProvider>
     </MemoryRouter>,
@@ -124,6 +131,7 @@ beforeEach(() => {
     configurable: true,
     value: () => ({ matches: false, addEventListener: vi.fn(), removeEventListener: vi.fn() }),
   })
+  Object.defineProperty(HTMLElement.prototype, 'scrollIntoView', { configurable: true, value: vi.fn() })
   document.head.innerHTML = '<meta name="description" content="initial description" />'
   homeDeferred = deferred<PageModuleFixture>()
   runtimeDeferred = deferred<PageModuleFixture>()
@@ -233,4 +241,80 @@ describe('populated shell integration', () => {
     expect(homeLoad).not.toHaveBeenCalled()
     expect(unusedLoad).not.toHaveBeenCalled()
   })
+})
+
+describe('heading deep links', () => {
+  it('focuses a valid metadata heading after a direct lazy load without rendering Not Found', async () => {
+    renderApp(`${RUNTIME_META.route}?heading=runtime-heading`, true)
+    await act(async () => runtimeDeferred.resolve({ default: RUNTIME_PAGE }))
+
+    const heading = await screen.findByRole('heading', { level: 2, name: 'Runtime heading' })
+    await waitFor(() => expect(document.activeElement).toBe(heading))
+    expect(heading.getAttribute('tabindex')).toBe('-1')
+    expect(screen.getByTestId('location').textContent).toBe(`${RUNTIME_META.route}?heading=runtime-heading`)
+    expect(screen.queryByRole('heading', { name: 'Page not found' })).toBeNull()
+  })
+
+  it('uses canonical encoded query targets and keeps the lazy page mounted through history', async () => {
+    renderApp(RUNTIME_META.route)
+    await act(async () => runtimeDeferred.resolve({ default: RUNTIME_PAGE }))
+
+    const routeHeading = await screen.findByRole('heading', { level: 1, name: RUNTIME_META.title })
+    const inlineLink = screen.getByRole('link', { name: 'Link to Runtime heading' })
+    const outlineLink = screen.getByRole('link', { name: 'Runtime heading' })
+    expect(inlineLink.getAttribute('href')).toBe(`${RUNTIME_META.route}?heading=runtime-heading`)
+    expect(outlineLink.getAttribute('href')).toBe(`${RUNTIME_META.route}?heading=runtime-heading`)
+
+    fireEvent.click(inlineLink)
+    const sectionHeading = screen.getByRole('heading', { level: 2, name: 'Runtime heading' })
+    await waitFor(() => expect(document.activeElement).toBe(sectionHeading))
+    expect(runtimeLoad).toHaveBeenCalledTimes(1)
+
+    fireEvent.click(screen.getByTestId('go-back'))
+    await waitFor(() => expect(document.activeElement).toBe(routeHeading))
+    expect(sectionHeading.getAttribute('tabindex')).toBeNull()
+    fireEvent.click(screen.getByTestId('go-forward'))
+    await waitFor(() => expect(document.activeElement).toBe(sectionHeading))
+    expect(runtimeLoad).toHaveBeenCalledTimes(1)
+  })
+
+  it('leaves route H1 focus unchanged for an invalid heading query', async () => {
+    renderApp(`${RUNTIME_META.route}?heading=not-in-current-metadata`)
+    await act(async () => runtimeDeferred.resolve({ default: RUNTIME_PAGE }))
+
+    const heading = await screen.findByRole('heading', { level: 1, name: RUNTIME_META.title })
+    await waitFor(() => expect(document.activeElement).toBe(heading))
+    expect(screen.queryByRole('heading', { name: 'Page not found' })).toBeNull()
+  })
+})
+
+it('renders the Home Orientation rail with all three canonical pages and Home current', async () => {
+  const systemMeta: PageMeta = { ...HOME_META, id: 'orientation-system-map', route: '/orientation/system-map', navTitle: 'System map', title: 'The whole BB system', readingOrder: 2 }
+  const sourceMeta: PageMeta = { ...HOME_META, id: 'orientation-source-and-fork', route: '/orientation/source-and-fork', navTitle: 'Source snapshot', title: 'Source snapshot and maintained fork', readingOrder: 3 }
+  testRegistry.entries.splice(1, 0,
+    { meta: systemMeta, load: vi.fn(async () => ({ default: HOME_PAGE })) },
+    { meta: sourceMeta, load: vi.fn(async () => ({ default: HOME_PAGE })) },
+  )
+
+  renderApp('/')
+  await act(async () => homeDeferred.resolve({ default: HOME_PAGE }))
+  await screen.findByRole('heading', { level: 1, name: HOME_META.title })
+
+  const rail = document.querySelector<HTMLElement>('.page-rail')
+  expect(rail?.querySelector('.page-rail__title')?.textContent).toBe('Orientation')
+  expect(Array.from(rail?.querySelectorAll('.page-rail__list a') ?? []).map((link) => link.textContent)).toEqual(['Home', 'System map', 'Source snapshot'])
+  expect(rail?.querySelector('a[href="/"]')?.getAttribute('aria-current')).toBe('page')
+})
+
+it('exposes the required document landmarks without changing shell order', async () => {
+  renderApp('/')
+  await act(async () => homeDeferred.resolve({ default: HOME_PAGE }))
+  await screen.findByRole('heading', { level: 1, name: HOME_META.title })
+
+  expect(document.querySelector('header.section-rail nav[aria-label="Documentation sections"]')).toBeTruthy()
+  expect(document.querySelector('header.topbar')).toBeTruthy()
+  const contentinfo = screen.getByRole('contentinfo')
+  expect(contentinfo.querySelector('nav[aria-label="Page navigation"]')).toBeTruthy()
+  expect(screen.getByRole('main')).toBeTruthy()
+  expect(screen.getByRole('article')).toBeTruthy()
 })

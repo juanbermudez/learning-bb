@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import type { ComponentType } from 'react'
 import type { PageMeta } from '../content/schema'
 import { contentRegistry, pageForRoute, type PageModule } from '../content/registry'
-import { navigationNeighbors, pagesForSection, sectionForPath, SECTION_DEFINITIONS } from './navigation'
+import { headingRoute, navigationNeighbors, pagesForSection, sectionForPath, SECTION_DEFINITIONS } from './navigation'
 import { MobileNavDialog } from '../components/navigation/MobileNavDialog'
 import { PageRail } from '../components/navigation/PageRail'
 import { SectionRail } from '../components/navigation/SectionRail'
@@ -22,7 +22,27 @@ function NotFoundState({ pathname }: { pathname: string }) {
   return <section className="route-error" aria-labelledby="not-found-title"><h1 id="not-found-title" data-route-heading tabIndex={-1}>Page not found</h1><p>No authored page is registered for <code>{pathname}</code>.</p><div className="route-error__actions"><Link className="button button--primary" to="/">Home</Link><Link className="button" to="/orientation/system-map">System map</Link><button type="button" className="button" data-open-search>Search</button></div></section>
 }
 
-function PageLoader({ meta, load }: { meta: PageMeta; load: () => Promise<PageModule> }) {
+function focusLoadedPage(meta: PageMeta, headingId: string | null) {
+  if (headingId && meta.headings.some((heading) => heading.id === headingId)) {
+    const heading = document.getElementById(headingId)?.querySelector<HTMLElement>('h2')
+    if (heading) {
+      const priorTabIndex = heading.getAttribute('tabindex')
+      const restoreTabIndex = () => {
+        if (priorTabIndex === null) heading.removeAttribute('tabindex')
+        else heading.setAttribute('tabindex', priorTabIndex)
+      }
+      heading.setAttribute('tabindex', '-1')
+      heading.addEventListener('blur', restoreTabIndex, { once: true })
+      heading.focus({ preventScroll: true })
+      heading.scrollIntoView?.({ behavior: 'auto', block: 'start' })
+      if (document.activeElement !== heading) restoreTabIndex()
+      return
+    }
+  }
+  document.querySelector<HTMLElement>('[data-route-heading]')?.focus()
+}
+
+function PageLoader({ meta, load, headingId }: { meta: PageMeta; load: () => Promise<PageModule>; headingId: string | null }) {
   const [Page, setPage] = useState<ComponentType | null>(null)
   const [error, setError] = useState(false)
   useEffect(() => {
@@ -32,8 +52,9 @@ function PageLoader({ meta, load }: { meta: PageMeta; load: () => Promise<PageMo
   }, [load])
   useEffect(() => {
     if (!Page && !error) return
-    document.querySelector<HTMLElement>('[data-route-heading]')?.focus()
-  }, [Page, error])
+    if (error) document.querySelector<HTMLElement>('[data-route-heading]')?.focus()
+    else focusLoadedPage(meta, headingId)
+  }, [Page, error, headingId, meta])
   if (error) return <section className="route-error" aria-labelledby="page-error-title"><h1 id="page-error-title" data-route-heading tabIndex={-1}>Unable to load {meta.title}</h1><p>The route is registered, but its page module failed to load. Return home or try again.</p><div className="route-error__actions"><Link className="button button--primary" to="/">Home</Link></div></section>
   if (!Page) return <div className="empty-registry" aria-live="polite"><strong>Loading page…</strong></div>
   return <Page />
@@ -46,6 +67,7 @@ function Topbar({ title, onMenu, onSearch }: { title: string; onMenu: () => void
 export default function App() {
   const location = useLocation()
   const pathname = location.pathname || '/'
+  const headingId = new URLSearchParams(location.search).get('heading')
   // The gallery is a local component fixture only; it must not become a public route.
   const isGallery = import.meta.env.DEV && pathname === '/_b02/gallery'
   const entry = pageForRoute(pathname)
@@ -98,10 +120,10 @@ export default function App() {
         <main id="main-content" className="page-main" data-route-enter={routeKey === pathname ? 'true' : 'false'}>
           <div className="page-layout">
             <div className="page-layout__reading page-column">
-              {isGallery ? <B02Gallery /> : meta && entry ? <PageLoader key={meta.id} meta={meta} load={entry.load} /> : pathname === '/' && contentRegistry.length === 0 ? <EmptyRegistryState /> : <NotFoundState pathname={pathname} />}
+              {isGallery ? <B02Gallery /> : meta && entry ? <PageLoader key={meta.id} meta={meta} load={entry.load} headingId={headingId} /> : pathname === '/' && contentRegistry.length === 0 ? <EmptyRegistryState /> : <NotFoundState pathname={pathname} />}
               {meta && <><RelatedLinks ids={meta.relatedPageIds} /><FooterNavigation previous={neighbors.previous} next={neighbors.next} /></>}
             </div>
-            {meta && <aside className="page-layout__outline"><div className="page-outline" aria-label="On this page"><div className="page-outline__title">On this page</div><div className="page-outline__links">{meta.headings.map((heading) => <a key={heading.id} href={`#${heading.id}`}>{heading.title}</a>)}</div></div></aside>}
+            {meta && <aside className="page-layout__outline"><div className="page-outline" aria-label="On this page"><div className="page-outline__title">On this page</div><div className="page-outline__links">{meta.headings.map((heading) => <Link key={heading.id} to={headingRoute(pathname, heading.id)}>{heading.title}</Link>)}</div></div></aside>}
           </div>
         </main>
       </div>

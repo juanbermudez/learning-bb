@@ -14,6 +14,8 @@ export function SearchDialog({ open, onClose, pages }: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const triggerRef = useRef<HTMLElement | null>(null)
+  const onCloseRef = useRef(onClose)
+  onCloseRef.current = onClose
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
   const results = searchPages(pages, query)
@@ -33,12 +35,12 @@ export function SearchDialog({ open, onClose, pages }: Props) {
   useEffect(() => {
     const dialog = dialogRef.current
     if (!dialog) return
-    const onCancel = (event: Event) => { event.preventDefault(); onClose() }
+    const onCancel = (event: Event) => { event.preventDefault(); onCloseRef.current() }
     const onCloseEvent = () => { if (triggerRef.current?.isConnected) triggerRef.current.focus() }
     dialog.addEventListener('cancel', onCancel)
     dialog.addEventListener('close', onCloseEvent)
     return () => { dialog.removeEventListener('cancel', onCancel); dialog.removeEventListener('close', onCloseEvent) }
-  }, [onClose])
+  }, [])
 
   const moveActive = (delta: number) => {
     if (!results.length) return
@@ -47,7 +49,17 @@ export function SearchDialog({ open, onClose, pages }: Props) {
   const goTo = (result: SearchRecord) => { onClose(); setQuery(''); window.requestAnimationFrame(() => { window.location.hash = result.meta.route }) }
 
   return (
-    <dialog ref={dialogRef} className="search-dialog dialog-backdrop" aria-labelledby="search-title">
+    <dialog
+      ref={dialogRef}
+      className="search-dialog dialog-backdrop"
+      aria-labelledby="search-title"
+      onKeyDownCapture={(event) => {
+        if (event.key !== 'Escape') return
+        event.preventDefault()
+        event.stopPropagation()
+        onClose()
+      }}
+    >
       <div className="search-dialog__inner">
         <div className="search-dialog__input-wrap">
           <SearchIcon />

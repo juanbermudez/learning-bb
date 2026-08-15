@@ -49,7 +49,7 @@
 .page-meta-row__mix { display: inline-flex; flex-wrap: wrap; gap: 5px; }
 
 .content-stack { display: grid; gap: 48px; }
-.doc-article { min-width: 0; }
+.doc-article, .doc-article__body, .doc-article__body > *, .data-table, .diagram-card, .sources-disclosure, .sources-disclosure__list, .source-card { min-width: 0; max-width: 100%; }
 .doc-article__body { display: grid; gap: 32px; }
 .at-a-glance { display: grid; gap: 10px; padding: 18px 20px; background: var(--surface-subtle); border-radius: var(--radius-row); box-shadow: inset 0 0 0 1px var(--line); }
 .at-a-glance__label { color: var(--ink-muted); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -86,18 +86,20 @@
 .sources-disclosure__list { display: grid; gap: 10px; padding: 0 0 8px; }
 .source-card { display: grid; gap: 8px; padding: 15px 16px; border-radius: var(--radius-row); background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); }
 .source-card__top, .source-card__bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.source-card > *, .source-card__top > *, .source-card__bottom > * { min-width: 0; max-width: 100%; }
+.source-card__bottom .text-meta { overflow-wrap: anywhere; }
 .source-card__path { min-width: 0; overflow: hidden; color: var(--ink-strong); font-family: 'SFMono-Regular', Consolas, monospace; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
 .source-card__symbol { color: var(--ink-muted); font-family: 'SFMono-Regular', Consolas, monospace; font-size: 12px; }
 .source-card__statement { color: var(--ink-muted); font-size: 13px; line-height: 1.45; }
 .source-card__actions { display: flex; flex-wrap: wrap; gap: 6px; }
-.source-card__actions button, .source-card__actions a { min-height: 32px; padding: 5px 8px; border: 1px solid var(--line); border-radius: var(--radius-control); background: transparent; color: var(--accent); font-size: 12px; text-decoration: none; }
+.source-card__actions button, .source-card__actions a { min-height: 44px; padding: 5px 8px; border: 1px solid var(--line); border-radius: var(--radius-control); background: transparent; color: var(--accent); font-size: 12px; text-decoration: none; }
 .source-card__actions button { cursor: pointer; }
 .source-card__actions button:hover, .source-card__actions a:hover { background: var(--accent-soft); }
 .copy-live { min-height: 18px; color: var(--positive); font-size: 12px; }
 
 .code-disclosure pre { max-width: 100%; margin: 0; overflow: auto; padding: 16px; color: var(--ink); border-radius: var(--radius-row); background: var(--surface-subtle); font-size: 13px; line-height: 1.55; }
 .data-table { display: grid; gap: 8px; }
-.data-table__scroll { overflow-x: auto; border-radius: var(--radius-row); box-shadow: inset 0 0 0 1px var(--line); }
+.data-table__scroll { max-width: 100%; overflow-x: auto; border-radius: var(--radius-row); box-shadow: inset 0 0 0 1px var(--line); }
 .data-table table { width: 100%; min-width: 520px; border-collapse: collapse; background: var(--surface); }
 .data-table caption { padding: 10px 12px; color: var(--ink-muted); caption-side: bottom; font-size: 12px; text-align: left; }
 .data-table th, .data-table td { padding: 11px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
@@ -161,7 +163,7 @@
 .diagram-card__controls { display: flex; flex-wrap: wrap; gap: 6px; }
 .diagram-card__controls button { min-height: 44px; padding: 8px 10px; color: var(--accent); border: 1px solid var(--line); border-radius: var(--radius-control); background: var(--surface); font-size: 13px; cursor: pointer; }
 .diagram-card__controls button:hover { background: var(--accent-soft); }
-.diagram-viewport { display: grid; min-height: 280px; max-height: 560px; place-items: center; overflow: auto; padding: 24px; border-radius: var(--radius-frame); box-shadow: inset 0 0 0 1px var(--line), var(--shadow-contact); }
+.diagram-viewport { display: grid; min-height: 280px; max-width: 100%; max-height: 560px; place-items: center; overflow: auto; padding: 24px; border-radius: var(--radius-frame); box-shadow: inset 0 0 0 1px var(--line), var(--shadow-contact); }
 .diagram-viewport__svg { width: 100%; min-width: 280px; }
 .diagram-viewport__svg svg { display: block; width: 100%; height: auto; min-height: 200px; }
 .diagram-placeholder, .diagram-error { display: grid; max-width: 58ch; gap: 8px; padding: 24px; color: var(--ink-muted); text-align: center; }
