@@ -1,0 +1,255 @@
+[
+  {
+    "id": "host-responsive",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "AppLayout uses compact viewport and visual-viewport state while maintaining the mobile navigation trigger and host sidebar behavior.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/layout/AppLayout.tsx",
+    "symbol": "AppLayout.compactViewport",
+    "lineStart": 400,
+    "lineEnd": 417,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "secondary-responsive",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ThreadDetailView derives compact secondary-panel state from the measured compact viewport and uses drawer visibility for that path.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/ThreadDetailView.tsx",
+    "symbol": "ThreadDetailViewInternal.renderSecondaryPanelAsDrawer",
+    "lineStart": 527,
+    "lineEnd": 535,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-responsive",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Tasks measures its own container, collapses below its inner threshold, and marks boards unusable below a smaller width.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/tasks/shell/app-shell.tsx",
+    "symbol": "TasksAppShell",
+    "lineStart": 33,
+    "lineEnd": 41,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "docs-responsive",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Docs measures its notes pane and owns an internal sidebar collapse state separate from the host shell.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/docs/app.tsx",
+    "symbol": "NotesPanel.responsiveSidebar",
+    "lineStart": 1493,
+    "lineEnd": 1572,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "split-fallback",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "SplitThreadArea renders a standalone thread path when splits are disabled or the viewport is compact.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/SplitThreadArea.tsx",
+    "symbol": "SplitThreadArea",
+    "lineStart": 580,
+    "lineEnd": 659,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "web-browser-state",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "BrowserTabContent does not attach a native browser view when the desktop browser API is absent.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/BrowserTabContent.tsx",
+    "symbol": "BrowserTabContent",
+    "lineStart": 24,
+    "lineEnd": 70,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "desktop-api",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The renderer measures browser bounds and sends native browser attachment and visibility state through the desktop API.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/secondary-panel/BrowserTabContent.tsx",
+    "symbol": "BrowserTabContent.nativeBounds",
+    "lineStart": 153,
+    "lineEnd": 190,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "electron-browser",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Electron preload exposes a validated browser context-bridge API for native tab attachment, navigation, bounds, visibility, and state events.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/desktop/src/preload.ts",
+    "symbol": "bbDesktop.browser",
+    "lineStart": 193,
+    "lineEnd": 272,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "electron-view",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Electron creates retained native WebContentsView instances in an isolated browser partition and controls their visible bounds.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/desktop/src/desktop-browser-view.ts",
+    "symbol": "DesktopBrowserViewManager",
+    "lineStart": 50,
+    "lineEnd": 79,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "browser-policy",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Desktop browser policy limits top-level navigation and allows sanitized clipboard write while denying other browser permissions.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/desktop/src/desktop-browser-policy.ts",
+    "symbol": "desktopBrowserPolicy",
+    "lineStart": 1,
+    "lineEnd": 60,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "desktop-permissions",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The Electron browser manager handles the allowed sanitized clipboard permission path and denies other device permissions.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/desktop/src/desktop-browser-view.ts",
+    "symbol": "DesktopBrowserViewManager.permission",
+    "lineStart": 274,
+    "lineEnd": 283,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

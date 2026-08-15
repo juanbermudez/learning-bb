@@ -1,0 +1,232 @@
+[
+  {
+    "id": "empty-welcome",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The empty root welcome offers new-thread, project, import, and learning actions when no project is available.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/RootComposeEmptyWelcome.tsx",
+    "symbol": "RootComposeEmptyWelcome",
+    "lineStart": 53,
+    "lineEnd": 132,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "submit-new-thread",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The root compose submit path validates project, provider, model, and environment input before creating or forking a thread and navigating to it.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/RootComposeView.tsx",
+    "symbol": "submitPromptInternal",
+    "lineStart": 1658,
+    "lineEnd": 1737,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "home-config",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "RootComposeView composes execution and environment configuration for the new-thread prompt box.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/RootComposeView.tsx",
+    "symbol": "RootComposeView.executionConfig",
+    "lineStart": 3100,
+    "lineEnd": 3179,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "execution-controls",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "ExecutionControls models provider, model, service tier, reasoning, permission, and plugin preset availability.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/promptbox/ExecutionControls.tsx",
+    "symbol": "ExecutionControls",
+    "lineStart": 1,
+    "lineEnd": 80,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "prompt-box",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "NewThreadPromptBox supplies project, environment, branch, worktree, permission, plugin composer, and execution controls to the prompt editor.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/promptbox/NewThreadPromptBox.tsx",
+    "symbol": "NewThreadPromptBox",
+    "lineStart": 221,
+    "lineEnd": 300,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "environment-picker",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "EnvironmentPicker represents local or remote sources, hosts, work location, worktrees, and unavailable states.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/pickers/EnvironmentPicker.tsx",
+    "symbol": "EnvironmentPicker",
+    "lineStart": 54,
+    "lineEnd": 100,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "worktree-picker",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "WorktreePicker exposes reusable worktrees with representative thread, host, and branch metadata.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/pickers/WorktreePicker.tsx",
+    "symbol": "WorktreePicker",
+    "lineStart": 17,
+    "lineEnd": 96,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "prompt-input",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "PromptInput supports text, mentions, image and file inputs, including agent-only visibility.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/shared-types.ts",
+    "symbol": "promptInputSchema",
+    "lineStart": 299,
+    "lineEnd": 335,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-mentions",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Plugin mention context is resolved once at send time and a failed resolution blocks the send.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/plugins/plugin-mentions.ts",
+    "symbol": "resolvePluginMentionContextInputs",
+    "lineStart": 10,
+    "lineEnd": 63,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "attachment-staging",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The host daemon stages project attachments into confined per-thread storage before runtime dispatch.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/host-daemon/src/command-handlers/prompt-attachments.ts",
+    "symbol": "stagePromptAttachment",
+    "lineStart": 148,
+    "lineEnd": 156,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

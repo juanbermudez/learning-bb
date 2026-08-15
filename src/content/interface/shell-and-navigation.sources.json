@@ -1,0 +1,163 @@
+[
+  {
+    "id": "app-host",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "App establishes cross-route invalidation, theme, plugin boot, commands, and route navigation before rendering the route tree.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/App.tsx",
+    "symbol": "App",
+    "lineStart": 332,
+    "lineEnd": 368,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "route-grammar",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "AppRoutes places Settings and tools routes explicitly and sends the wildcard workspace grammar to SplitWorkspaceRoute.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/App.tsx",
+    "symbol": "AppRoutes",
+    "lineStart": 216,
+    "lineEnd": 295,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "layout-owner",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "AppLayout selects sidebar mode, shared header behavior, sidebar bootstrap data, and the content inset.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/layout/AppLayout.tsx",
+    "symbol": "AppLayout",
+    "lineStart": 400,
+    "lineEnd": 475,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "workspace-route",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "SplitWorkspaceRoute resolves root, thread, and plugin-panel route kinds for the split workspace.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/SplitWorkspaceRoute.tsx",
+    "symbol": "SplitWorkspaceRoute",
+    "lineStart": 1,
+    "lineEnd": 67,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "sidebar-owner",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "AppSidebar keeps new-thread, search, plugin navigation, and footer chrome host-rendered around the scrolling thread list.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/sidebar/AppSidebar.tsx",
+    "symbol": "AppSidebar",
+    "lineStart": 73,
+    "lineEnd": 110,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "split-pane",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "SplitThreadArea supports persisted split behavior, focused pane changes, and a standalone compact or feature-disabled path.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/thread-detail/SplitThreadArea.tsx",
+    "symbol": "SplitThreadArea",
+    "lineStart": 580,
+    "lineEnd": 659,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "route-aliases",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Legacy tools and automation paths are handled as compatibility redirects in the route table.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/App.tsx",
+    "symbol": "AppRoutes.compatibilityRedirects",
+    "lineStart": 263,
+    "lineEnd": 325,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

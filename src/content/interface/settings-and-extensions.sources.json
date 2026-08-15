@@ -1,0 +1,255 @@
+[
+  {
+    "id": "settings-nav",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Settings navigation declares built-in sections and derives Files and plugin settings rows from host and plugin availability.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/settings/settings-nav.tsx",
+    "symbol": "settingsNavSections",
+    "lineStart": 14,
+    "lineEnd": 43,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-settings-slot",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Settings navigation checks daemon and file-opener availability and adds enabled plugin settings only when configuration or a settings slot exists.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/settings/settings-nav.tsx",
+    "symbol": "useSettingsNavState",
+    "lineStart": 75,
+    "lineEnd": 142,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "extensions-nav",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Tools navigation defines Skills and Plugins sections, installed and browse collections, detail routes, and route-derived active labels.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/tools/tools-navigation.ts",
+    "symbol": "toolsNavigation",
+    "lineStart": 36,
+    "lineEnd": 70,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "extensions-actions",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Tools navigation resolves browse, installed, detail, enable, disable, remove, and source actions for extension management.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/tools/tools-navigation.ts",
+    "symbol": "toolsNavigation.routes",
+    "lineStart": 273,
+    "lineEnd": 352,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-slots",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "PluginRegistrationSet enumerates homepage, settings, navigation, thread-panel, composer, interaction, file, and message extension points.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/lib/plugin-slots.ts",
+    "symbol": "PluginRegistrationSet",
+    "lineStart": 26,
+    "lineEnd": 45,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-panel",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "PluginPanelView resolves a registered panel, shows an unavailable state while loading or disabled, and mounts the body inside host containment.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/views/PluginPanelView.tsx",
+    "symbol": "PluginPanelView",
+    "lineStart": 24,
+    "lineEnd": 93,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-header",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "PluginPanelHeader keeps the plugin title, icon, and optional header contribution in shared host chrome.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/plugin/PluginPanelHeader.tsx",
+    "symbol": "PluginPanelHeader",
+    "lineStart": 1,
+    "lineEnd": 80,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-failure-boundary",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Plugin slot mounting supplies a per-plugin failure boundary and generation-aware mount context.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/components/plugin/PluginSlotMount.tsx",
+    "symbol": "PluginSlotMount",
+    "lineStart": 9,
+    "lineEnd": 15,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "tasks-surface",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The Tasks plugin registers a navigation panel and thread-panel action among its plugin surfaces.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/tasks/app.tsx",
+    "symbol": "TasksPluginApp",
+    "lineStart": 1,
+    "lineEnd": 21,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "docs-surface",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The Docs plugin registers a navigation panel, file opener, and thread-panel action.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/docs/app.tsx",
+    "symbol": "DocsPluginRegistration",
+    "lineStart": 2365,
+    "lineEnd": 2387,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "automations-surface",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Automations registers a plugin navigation panel with overview, browse, installed, detail, and edit subpaths.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/automations/app.tsx",
+    "symbol": "AutomationsNavPanel",
+    "lineStart": 803,
+    "lineEnd": 880,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]
