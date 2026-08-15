@@ -3,7 +3,7 @@ import type { PageMeta } from '../../content/schema'
 import type { SectionDefinition } from '../../app/navigation'
 
 export function Breadcrumbs({ meta, section }: { meta?: PageMeta; section?: SectionDefinition }) {
-  if (!meta && !section) return null
+  if (!meta || meta.route === '/') return null
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
       <Link to={section?.firstRoute ?? '/'}>{section?.label ?? 'Documentation'}</Link>
