@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fixture-source",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The fixture contains a bounded source window.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/routes/example.ts",
+    "symbol": "example.route",
+    "lineStart": 10,
+    "lineEnd": 20,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]
