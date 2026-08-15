@@ -164,8 +164,8 @@
     "path": "apps/app/src/components/sidebar/PluginThreadList.tsx",
     "symbol": "PluginThreadList",
     "lineStart": 1,
-    "lineEnd": 70,
-    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "lineEnd": 68,
+    "windowSha256": "fcfbae5a5c7ed739d20ea8be8058a560c4af8b51687930d803851ab5dbd9200c",
     "public": { "status": "unverified", "url": null, "rawUrl": null, "verifiedAt": null }
   },
   {
