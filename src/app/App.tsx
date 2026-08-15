@@ -30,6 +30,10 @@ function PageLoader({ meta, load }: { meta: PageMeta; load: () => Promise<PageMo
     load().then((module) => { if (!cancelled) setPage(() => module.default) }).catch(() => { if (!cancelled) setError(true) })
     return () => { cancelled = true }
   }, [load])
+  useEffect(() => {
+    if (!Page && !error) return
+    document.querySelector<HTMLElement>('[data-route-heading]')?.focus()
+  }, [Page, error])
   if (error) return <section className="route-error" aria-labelledby="page-error-title"><h1 id="page-error-title" data-route-heading tabIndex={-1}>Unable to load {meta.title}</h1><p>The route is registered, but its page module failed to load. Return home or try again.</p><div className="route-error__actions"><Link className="button button--primary" to="/">Home</Link></div></section>
   if (!Page) return <div className="empty-registry" aria-live="polite"><strong>Loading page…</strong></div>
   return <Page />
@@ -58,13 +62,11 @@ export default function App() {
     setRouteKey(pathname)
     setMenuOpen(false)
     setSearchOpen(false)
-    const currentTitle = meta?.title ?? (pathname === '/' ? 'Learning BB shell' : isGallery ? 'Component state gallery' : 'Page not found')
+    const currentTitle = meta?.title ?? (isGallery ? 'Component state gallery' : pathname === '/' && contentRegistry.length === 0 ? 'Learning BB shell' : 'Page not found')
     document.title = `${currentTitle} · Learning BB`
     const description = document.querySelector<HTMLMetaElement>('meta[name="description"]')
     if (description) description.content = meta?.summary ?? 'An independent, source-grounded Learning BB documentation shell.'
-    const focus = () => document.querySelector<HTMLElement>('[data-route-heading]')?.focus()
-    const timer = window.setTimeout(focus, 0)
-    return () => window.clearTimeout(timer)
+    if (!meta || !entry) document.querySelector<HTMLElement>('[data-route-heading]')?.focus()
   }, [meta, pathname])
 
   useEffect(() => {
@@ -85,7 +87,7 @@ export default function App() {
     return () => document.removeEventListener('click', onOpenSearch)
   }, [])
 
-  const title = meta?.navTitle ?? activeSection?.label ?? (pathname === '/' ? 'Learning BB' : isGallery ? 'B02 gallery' : 'Not found')
+  const title = meta?.navTitle ?? activeSection?.label ?? (isGallery ? 'B02 gallery' : pathname === '/' && contentRegistry.length === 0 ? 'Learning BB' : 'Not found')
   return (
     <div className="app-frame">
       <a className="skip-link" href="#main-content">Skip to content</a>
@@ -96,7 +98,7 @@ export default function App() {
         <main id="main-content" className="page-main" data-route-enter={routeKey === pathname ? 'true' : 'false'}>
           <div className="page-layout">
             <div className="page-layout__reading page-column">
-              {pathname === '/' ? <EmptyRegistryState /> : isGallery ? <B02Gallery /> : meta && entry ? <PageLoader meta={meta} load={entry.load} /> : <NotFoundState pathname={pathname} />}
+              {isGallery ? <B02Gallery /> : meta && entry ? <PageLoader key={meta.id} meta={meta} load={entry.load} /> : pathname === '/' && contentRegistry.length === 0 ? <EmptyRegistryState /> : <NotFoundState pathname={pathname} />}
               {meta && <><RelatedLinks ids={meta.relatedPageIds} /><FooterNavigation previous={neighbors.previous} next={neighbors.next} /></>}
             </div>
             {meta && <aside className="page-layout__outline"><div className="page-outline" aria-label="On this page"><div className="page-outline__title">On this page</div><div className="page-outline__links">{meta.headings.map((heading) => <a key={heading.id} href={`#${heading.id}`}>{heading.title}</a>)}</div></div></aside>}
