@@ -1,0 +1,186 @@
+[
+  {
+    "id": "browser-control",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The browser is a control surface and the server dispatches work to enrolled host daemons.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "docs/multiple-devices.md",
+    "symbol": "local control surface and host daemon",
+    "lineStart": 3,
+    "lineEnd": 10,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "server-listener",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server listener accepts a bind host and the default packaged host is loopback.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/start-server.ts",
+    "symbol": "startHttpListener",
+    "lineStart": 37,
+    "lineEnd": 42,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "event-rows",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server authenticates daemon event ingress, maps envelopes to stored rows, and appends batches in a transaction.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/internal/events.ts",
+    "symbol": "/session/events",
+    "lineStart": 860,
+    "lineEnd": 939,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "runtime-owner",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "A live runtime entry carries the AgentRuntime with its environment, workspace, skill catalog state, and terminal set.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/host-daemon/src/runtime-manager.ts",
+    "symbol": "RuntimeEntry",
+    "lineStart": 133,
+    "lineEnd": 149,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "thread-storage",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Thread storage has a data-directory root and a per-thread path distinct from the event database.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/thread-storage.ts",
+    "symbol": "thread storage root",
+    "lineStart": 25,
+    "lineEnd": 68,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-surfaces",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The plugin registration set exposes additive surfaces such as homepage, settings, navigation, composer, and thread actions.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/app/src/lib/plugin-slots.ts",
+    "symbol": "PluginRegistrationSet",
+    "lineStart": 26,
+    "lineEnd": 45,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "connect-tunnel",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The Connect plugin maintains a reconnecting tunnel and forwards framed requests toward the local server or a registered share.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/connect/src/tunnel.ts",
+    "symbol": "TunnelSession",
+    "lineStart": 436,
+    "lineEnd": 482,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "provider-internals",
+    "type": "bb-source",
+    "label": "Unknown",
+    "statement": "The host boundary shows runtime method calls, but provider adapter internals, model calls, and checkpoint semantics are outside this source window.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/host-daemon/src/command-handlers/thread.ts",
+    "symbol": "runSubmittedTurn",
+    "lineStart": 333,
+    "lineEnd": 365,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

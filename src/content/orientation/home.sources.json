@@ -1,0 +1,110 @@
+[
+  {
+    "id": "browser-control",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The browser is a control surface; the server dispatches work to enrolled host daemons.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "docs/multiple-devices.md",
+    "symbol": "local control surface and host daemon",
+    "lineStart": 3,
+    "lineEnd": 10,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "server-policy",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The packaged server binds to loopback by default and owns the server runtime, database, machine auth, and plugin service before listening.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/start-server.ts",
+    "symbol": "startHttpListener",
+    "lineStart": 37,
+    "lineEnd": 42,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "daemon-runtime",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The host daemon stages thread inputs and starts the runtime with workspace, instructions, tools, and skill context.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/host-daemon/src/command-handlers/thread.ts",
+    "symbol": "startThread",
+    "lineStart": 201,
+    "lineEnd": 253,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "provider-boundary",
+    "type": "bb-source",
+    "label": "Unknown",
+    "statement": "The scoped host code calls runtime start, resume, and turn methods, but these lines do not establish provider adapter internals or model API behavior.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/host-daemon/src/command-handlers/thread.ts",
+    "symbol": "resumeThreadRuntimeIfMissing",
+    "lineStart": 168,
+    "lineEnd": 198,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "snapshot-notice",
+    "type": "rendered-reference",
+    "label": "Observed",
+    "statement": "The Learning BB public notice identifies this site as independent and unofficial documentation.",
+    "path": "NOTICE.md",
+    "symbol": "independent-site notice"
+  },
+  {
+    "id": "public-fallback",
+    "type": "rendered-reference",
+    "label": "Unknown",
+    "statement": "A public source URL is not asserted until an immutable public file and matching source window are proven.",
+    "path": "README.md",
+    "symbol": "source snapshot policy"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "id": "snapshot-identity",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The maintained source snapshot defines HOST_DAEMON_PROTOCOL_VERSION as 119 in the host-daemon command contract.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/host-daemon-contract/src/commands.ts",
+    "symbol": "HOST_DAEMON_PROTOCOL_VERSION",
+    "lineStart": 35,
+    "lineEnd": 43,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "source-record",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The host command contract carries a named protocol constant that can be checked after a source merge.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/host-daemon-contract/src/commands.ts",
+    "symbol": "HOST_DAEMON_PROTOCOL_VERSION",
+    "lineStart": 35,
+    "lineEnd": 43,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "snapshot-record",
+    "type": "rendered-reference",
+    "label": "Observed",
+    "statement": "Each Learning BB source card records a branch, commit, dirty flag, observed date, repository-relative path, symbol, and bounded line window.",
+    "path": "README.md",
+    "symbol": "source snapshot policy",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    }
+  },
+  {
+    "id": "public-fallback",
+    "type": "rendered-reference",
+    "label": "Observed",
+    "statement": "When an immutable public source and matching normalized line window cannot be proven, the source card falls back to a repository-relative local snapshot without a guessed URL.",
+    "path": "README.md",
+    "symbol": "source snapshot policy"
+  },
+  {
+    "id": "public-status-unknown",
+    "type": "rendered-reference",
+    "label": "Unknown",
+    "statement": "The public mapping for the inspected dirty snapshot remains unverified.",
+    "path": "README.md",
+    "symbol": "unverified public status"
+  },
+  {
+    "id": "merge-rule",
+    "type": "proposal-guide",
+    "label": "Proposed",
+    "statement": "An upstream merge is a citation refresh boundary: recheck symbols and line windows before treating an older guide as current evidence.",
+    "path": "docs/architecture-blueprints/05-connector-registry.md",
+    "symbol": "maintained-fork freshness rule"
+  },
+  {
+    "id": "independent-notice",
+    "type": "rendered-reference",
+    "label": "Observed",
+    "statement": "Learning BB identifies itself as an independent, unofficial learning aid and does not present the site as official BB documentation.",
+    "path": "NOTICE.md",
+    "symbol": "independent-site notice"
+  },
+  {
+    "id": "provider-unknown",
+    "type": "bb-source",
+    "label": "Unknown",
+    "statement": "The inspected host boundary does not establish provider adapter internals or the semantics of provider-native state after a merge.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/host-daemon/src/command-handlers/thread.ts",
+    "symbol": "resumeThreadRuntimeIfMissing",
+    "lineStart": 168,
+    "lineEnd": 198,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]
