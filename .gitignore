@@ -8,3 +8,5 @@ dist/
 .env.*
 !.env.example
 .vite/
+public/diagrams/
+src/generated/diagram-manifest.ts
