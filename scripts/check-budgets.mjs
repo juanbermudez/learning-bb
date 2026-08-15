@@ -15,6 +15,8 @@ const BUDGETS = {
   initialRequests: 12,
 }
 
+const VITE_BASE = '/learning-bb/'
+
 function formatBytes(bytes) {
   return `${(bytes / 1024).toFixed(1)} KiB gzip`
 }
@@ -39,9 +41,80 @@ function gzipSize(filePath) {
   return gzipSync(fs.readFileSync(filePath), { level: 9 }).byteLength
 }
 
-function assetPath(distDirectory, reference) {
-  const cleanReference = reference.split('#', 1)[0].split('?', 1)[0]
-  return path.join(distDirectory, cleanReference.replace(/^\//, ''))
+function cleanReference(reference) {
+  return reference.split('#', 1)[0].split('?', 1)[0]
+}
+
+function isExternalReference(reference) {
+  return /^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(reference)
+}
+
+function isInsideDirectory(directory, candidate) {
+  const relative = path.relative(directory, candidate)
+  return relative === '' || (!relative.startsWith(`..${path.sep}`) && relative !== '..' && !path.isAbsolute(relative))
+}
+
+function assetKind(reference) {
+  const clean = cleanReference(reference)
+  if (/\.js$/i.test(clean)) return 'JavaScript'
+  if (/\.css$/i.test(clean)) return 'CSS'
+  return null
+}
+
+function assetResolution(distDirectory, reference) {
+  const clean = cleanReference(reference)
+  if (isExternalReference(clean) || !clean) return null
+
+  const candidates = []
+  if (clean.startsWith('/')) {
+    const relativeReference = clean.startsWith(VITE_BASE) ? clean.slice(VITE_BASE.length) : clean.slice(1)
+    const candidate = path.resolve(distDirectory, relativeReference)
+    if (isInsideDirectory(distDirectory, candidate)) candidates.push(candidate)
+  } else {
+    const candidate = path.resolve(distDirectory, clean)
+    if (isInsideDirectory(distDirectory, candidate)) candidates.push(candidate)
+  }
+
+  const existing = candidates.filter((candidate) => fs.existsSync(candidate) && fs.statSync(candidate).isFile())
+  return {
+    candidates,
+    filePath: existing[0] ?? candidates[0] ?? path.resolve(distDirectory, clean),
+  }
+}
+
+function referencedAssets(distDirectory, indexPath, references) {
+  const assets = []
+  const errors = []
+
+  for (const reference of references) {
+    const kind = assetKind(reference)
+    if (!kind || isExternalReference(cleanReference(reference))) continue
+
+    const resolution = assetResolution(distDirectory, reference)
+    const filePath = resolution?.filePath
+    if (!filePath || !fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
+      const lookedIn = resolution?.candidates?.map((candidate) => path.relative(distDirectory, candidate)).join(', ') || '(no in-dist path)'
+      errors.push(`missing local ${kind} asset referenced by ${indexPath}: ${reference} (looked under ${lookedIn})`)
+      continue
+    }
+    assets.push({ kind, filePath })
+  }
+
+  return { assets, errors }
+}
+
+function collectJavaScriptFiles(directory) {
+  const files = []
+  const entries = fs.readdirSync(directory, { withFileTypes: true }).sort((left, right) => left.name.localeCompare(right.name))
+  for (const entry of entries) {
+    const filePath = path.join(directory, entry.name)
+    if (entry.isDirectory()) {
+      files.push(...collectJavaScriptFiles(filePath))
+    } else if (entry.isFile() && /\.js$/i.test(entry.name)) {
+      files.push(filePath)
+    }
+  }
+  return files
 }
 
 function isDiagramChunk(filePath) {
@@ -64,21 +137,23 @@ function main() {
   }
 
   const html = fs.readFileSync(indexPath, 'utf8')
-  const references = [...html.matchAll(/(?:src|href)=["']([^"']+)["']/g)].map((match) => match[1])
-  const initialJavaScript = references
-    .filter((reference) => /\.js(?:[?#]|$)/.test(reference))
-    .map((reference) => assetPath(distDirectory, reference))
-    .filter((filePath) => fs.existsSync(filePath))
-  const initialCss = references
-    .filter((reference) => /\.css(?:[?#]|$)/.test(reference))
-    .map((reference) => assetPath(distDirectory, reference))
-    .filter((filePath) => fs.existsSync(filePath))
-  const allJavaScript = []
-  for (const entry of fs.readdirSync(distDirectory, { withFileTypes: true })) {
-    if (entry.isFile() && entry.name.endsWith('.js')) allJavaScript.push(path.join(distDirectory, entry.name))
-  }
+  const references = [...html.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/gi)].map((match) => match[1])
+  const referenced = referencedAssets(distDirectory, indexPath, references)
+  const errors = [...referenced.errors]
+  const initialJavaScript = [...new Set(referenced.assets.filter(({ kind }) => kind === 'JavaScript').map(({ filePath }) => filePath))]
+  const initialCss = [...new Set(referenced.assets.filter(({ kind }) => kind === 'CSS').map(({ filePath }) => filePath))]
+  const allJavaScript = collectJavaScriptFiles(distDirectory)
   const initialSet = new Set(initialJavaScript)
-  const errors = []
+  if (initialJavaScript.length === 0) {
+    errors.push('zero initial JavaScript assets resolved from dist/index.html; the React build must reference an initial JavaScript entry')
+  }
+
+  if (errors.length > 0) {
+    console.error(`Budget check failed with ${errors.length} error(s):`)
+    for (const error of errors) console.error(`- ${error}`)
+    return 1
+  }
+
   const initialJsSize = initialJavaScript.reduce((total, filePath) => total + gzipSize(filePath), 0)
   const initialCssSize = initialCss.reduce((total, filePath) => total + gzipSize(filePath), 0)
   const initialTransferSize = gzipSync(Buffer.from(html), { level: 9 }).byteLength + initialJsSize + initialCssSize
