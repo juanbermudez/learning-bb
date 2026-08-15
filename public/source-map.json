@@ -1,0 +1,2066 @@
+{
+  "blueprints-connector-registry/better-auth-account": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7135405e61f54d5b0072f3e463ca25167789dd82aaf5611501962fa09bd772e9"
+  },
+  "blueprints-connector-registry/connector-guide": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-connector-registry/freshness-audit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-connector-registry/github-cache": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5367e71c786e8469f3b21f64bff5c5cfe0a3463f1cd5c694ac567138e57713c5"
+  },
+  "blueprints-connector-registry/plugin-auth": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a563dc32f7859396624791098bcaab8668fdfef2611460e6ad0a2c453728c91d"
+  },
+  "blueprints-connector-registry/plugin-realtime": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7568940527f235e275f5204fcc7a13b436f310a6efcc13b56ab5827efc44aac8"
+  },
+  "blueprints-connector-registry/plugin-runtime": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c2ce39c55e23478729bcbadc7f5f93236c253e30d688fe78c61ab9dfbf3b94eb"
+  },
+  "blueprints-connector-registry/plugin-settings": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "554707afef13dfe7bbe287777ac87182e8c0498177612067f432704e81aff8e9"
+  },
+  "blueprints-connector-registry/protocol-119": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0c920723bfe8e307bf2e0507df3bc7fcd02b5a58931a7a6e57e1827791a47286"
+  },
+  "blueprints-connector-registry/secret-settings": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e41369499846f2b9cf58402f248ff83c174ecc9602da8e6a3728e278aaa901db"
+  },
+  "blueprints-interaction-agent/freshness-audit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-interaction-agent/interaction-guide": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-interaction-agent/personal-project": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "827c8f5912058f7ab4c22b35a4c2ec733970d4b4d308008c682a71be0390e95e"
+  },
+  "blueprints-interaction-agent/plugin-context": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d4918d9cba58d74d07c5d931d8db5afcf4b6558347e4a157103fe802d96ff295"
+  },
+  "blueprints-interaction-agent/queued-messages": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a589c1f7227dc4f4c120014d2da29d1eca81a7543ceb9a7e4e694d39a77b27fd"
+  },
+  "blueprints-interaction-agent/side-chat-fork": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "010db3b2fd77855d0f1199420409e436b2366884fcc960db8a7190123d0e359d"
+  },
+  "blueprints-interaction-agent/thread-lifecycle": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "033e17ee2019558f021088b0283ff87b059249cd62f1bb41fc5e21992dc17e87"
+  },
+  "blueprints-interaction-agent/voice-routes": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "61ab956a2fb3c4cc93960449cd784fd56295e1bde1f0aeb2e73c5e607d631749"
+  },
+  "blueprints-multitenancy-sync/cloud-gap": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-multitenancy-sync/connect-accounts": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7135405e61f54d5b0072f3e463ca25167789dd82aaf5611501962fa09bd772e9"
+  },
+  "blueprints-multitenancy-sync/connect-identity": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e8d85c853f75f25c287e27e4069ced95b727789d8212af3ed8614f590ab299a4"
+  },
+  "blueprints-multitenancy-sync/event-sequence": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "cc5d97e78811ad4a22a28f7928e2f82c5bc3e735f05c4cd0b757e32aa302bd8b"
+  },
+  "blueprints-multitenancy-sync/freshness-audit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-multitenancy-sync/protocol-119": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0c920723bfe8e307bf2e0507df3bc7fcd02b5a58931a7a6e57e1827791a47286"
+  },
+  "blueprints-multitenancy-sync/resume-provider": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "77348e9649bde321354172d21ce0041bf198ee730fae6b679cce8921b7987d55"
+  },
+  "blueprints-multitenancy-sync/server-sequence-assignment": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2cb0ff0525601a76cb5d807948d16f54845172f468c20e70f84e732db0de4d44"
+  },
+  "blueprints-multitenancy-sync/soft-delete": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "413e6cf0dcac24e016bfbe35729328410b5a515a3d2a40ac1cc9388ad509d967"
+  },
+  "blueprints-multitenancy-sync/sqlite-wal": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1778c1057f0669d9d3f7ab836884379ece8b8b6e1912dd50c627fe44bd9e053e"
+  },
+  "blueprints-multitenancy-sync/sync-guide": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-react-native-companion/attention": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "142ca1e931c4a86f8e90ef90e39b71188639d05716c758e270915db6c317a368"
+  },
+  "blueprints-react-native-companion/change-kinds": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "81739abe2ec4ebba51c205e178d8ee5b62abcdf9829b82f4fde4deb62378c949"
+  },
+  "blueprints-react-native-companion/connect-cookie": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "dcb42e77d3e0e6f626c92dfa1e0bc32a5a5a881e7ead4365667ad1125fe71cf7"
+  },
+  "blueprints-react-native-companion/connect-headers": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "55c9f7c7db8e6f32801a9a8106a68288dd9adbc5e7f10c540a673ad60f007ab6"
+  },
+  "blueprints-react-native-companion/desktop-session": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "65abc1bc1dc0f7f2b5c7720ff33edc53e8ffe09e0744a43c939c79c40f2752e0"
+  },
+  "blueprints-react-native-companion/mobile-gap": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-react-native-companion/native-guide": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-react-native-companion/public-contract": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bf6a159d68de1d7efef2e46bcb6e09a1f1fe971a4f7f41765517f6532050e90f"
+  },
+  "blueprints-react-native-companion/safe-storage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "545301714861b15621cd880aa6c18c0c0407b7e3477484a36be336bff7299a47"
+  },
+  "blueprints-react-native-companion/sdk-browser": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "79e7cd522a031a0a04185a28aa55966ae660789708eccadfe78003005502df78"
+  },
+  "blueprints-react-native-companion/server-routes": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8f4177be014b84a823389df9af26311aee6115cfada35c4cbaa4da368c42e556"
+  },
+  "blueprints-react-native-companion/ws-subscribe": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6602641a86c40b20cfa9a0e15ca4499b000fe9c81af02ed616bb737e7d176cd7"
+  },
+  "blueprints-ui-library-navigation/app-icons": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1557153a3d67f859ccb4cb1fc98f1e953997309cc3a09611ec33c369b24e58b5"
+  },
+  "blueprints-ui-library-navigation/freshness-audit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-ui-library-navigation/motion": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6619ec3e64101e27a37e9057e051ae6d1722b927083cf4aa6ccabecb1c6225d2"
+  },
+  "blueprints-ui-library-navigation/overlay": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "56e9161c581a0d72caedc512c2ad916830823de1980e01d90df727ef2d15a2b6"
+  },
+  "blueprints-ui-library-navigation/root-compose": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3a6d089be9eacdb5c2001c204b475933a8dc0aefb30e3eb44b9fe516b985257e"
+  },
+  "blueprints-ui-library-navigation/route-ownership": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a14fcd853e99330b7c1815e76d671eff2c0616cfd1e7c8294fc3cbb1b34351da"
+  },
+  "blueprints-ui-library-navigation/shared-ui-export": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "cbc03bfb49874fe97eb05199a00c1a8bbb8f54ebfee102ee225db42425adc5da"
+  },
+  "blueprints-ui-library-navigation/shortcut-cap": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7c701061524fde3205a3722b40809522656606cbc2216ac9607f7f8f1ccb08d1"
+  },
+  "blueprints-ui-library-navigation/slots-all": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "31a5c4090d52b449ae7bbcd79d388b8412933a1476a1954a314983a544a78c2c"
+  },
+  "blueprints-ui-library-navigation/slots-stable": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "47f7140c9c14dd7f11235576fc8b25e6af48cd0816ab7e6ef881043e4742a919"
+  },
+  "blueprints-ui-library-navigation/ui-guide": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "blueprints-ui-library-navigation/vite-shared-seam": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "41680ed008cc11a22bbe529717feca90f535554cf9aa2cda91e366b9e0003818"
+  },
+  "foundations-compaction-and-windowing/compaction-events": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "da1a1412eb3855726bb60a048568f852b763900f73c93e6e70a0f219265830c1"
+  },
+  "foundations-compaction-and-windowing/context-usage-event": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6e83c9cb4c47b260ad65d3c67642b46eb2acb4ccafca8ff6bbb0049bd4492bf9"
+  },
+  "foundations-compaction-and-windowing/durable-event-rows": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "06189971975099c502d546b3ae479d5cc5ac6d91ecaa93fe999b66f4ac62c338"
+  },
+  "foundations-compaction-and-windowing/manual-compaction-route": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7642d7d04be3cd7faa20204cf82b964d83c3626636c6e93401cb7993250abcef"
+  },
+  "foundations-compaction-and-windowing/manual-compaction-support": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0a16d95f00e0cd358880708445b959d7ce1b89fa211b77c1c77099709643b42f"
+  },
+  "foundations-compaction-and-windowing/provider-context-usage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "eb3a4f87665ed19274b911d79d5d80d7cc6cd8b750352299d25cfce72d020cca"
+  },
+  "foundations-compaction-and-windowing/runtime-shutdown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bb9c5d57625ef4cea56da116b958bb238d62ae5057e63bc14c17344415411949"
+  },
+  "foundations-compaction-and-windowing/thread-storage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "559b12087669bd7a126c361c2e7a0558c69709a70d90b4175b5a8af3ef9b3b66"
+  },
+  "foundations-compaction-and-windowing/timeline-budget": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0c297aed099c50a4f21bc5859854365a1840507f058af2d59dd1f40acce4eacf"
+  },
+  "foundations-compaction-and-windowing/timeline-byte-window": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bbc1e40c7df1f54f43cda9f11eaa60422cdb4ef992fb919d01c9ce89dc16bb9c"
+  },
+  "foundations-compaction-and-windowing/timeline-summary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "631c3d6e6e4b8dcbd156d948ab3307ba5795d96899c478584ea8e8c0f2443ec0"
+  },
+  "foundations-compaction-and-windowing/timeline-window": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e1e3c1f057a78bf479e841a387a15b88e1b97138910f2a128b82295680ccc9cc"
+  },
+  "foundations-context-memory-goals/agent-only-context": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6fb0bb3b5e79f6589ff976662b702ffeda2c9c8e4967379ba6df9f04ea97f144"
+  },
+  "foundations-context-memory-goals/goal-clear-route": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d153d69cb25e7f1156c09bc1bcb4ae7a944aafc548a4aa325187dbce6f708b53"
+  },
+  "foundations-context-memory-goals/goal-events": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b4796f5242582a74977a90714928be9371a1f6b1c3f4b68946bc71f7175ac454"
+  },
+  "foundations-context-memory-goals/goal-record": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9e33f5ecc3cdedf9ff5a3f83480e82709e5367879649b67c90f0c503b59d43f3"
+  },
+  "foundations-context-memory-goals/goal-shutdown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "01d40c3c411e7f57e011723f488e707d9789c9c7079a027fe9f1326af00b7f7d"
+  },
+  "foundations-context-memory-goals/goal-waiter": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "74cb1956b2ae50f2ec50bf48b5b7bc2c9e9023d8827db51a75c1651caf41f4c0"
+  },
+  "foundations-context-memory-goals/memory-catalog": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "988c8d0b753754d4d44ecad482712295b8e13b54e3f2ac237aaec23d0c2ee1aa"
+  },
+  "foundations-context-memory-goals/memory-records": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "73d9378f6e8208f8780753ba259cc919146233e473be6c185038ff14700ace06"
+  },
+  "foundations-context-memory-goals/memory-skill-recommendation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7537cbe65cfd1d402a505723ea38f9498dcccc535a139ea22c3465dd335107bf"
+  },
+  "foundations-context-memory-goals/native-memory-config": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "929d1e5a6a08cbc8ea88b2f086a4d66953e9f2d74b3a62cb71e245fb79e826c8"
+  },
+  "foundations-context-memory-goals/native-memory-defaults": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3723d7efdb6bd30882cca8e80a082dfc22533f15dbdfc5d723cf9dd2b003c338"
+  },
+  "foundations-context-memory-goals/prompt-history": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a363c27cd65d7f72ed7903408d5cd3464dc963ccb528c57b7c2e25edf4c1eda2"
+  },
+  "foundations-context-memory-goals/queued-agent-only": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "168fe61e75086955b3ae562b035669c02378884e0af83370ba23f76c7b308d35"
+  },
+  "foundations-context-memory-goals/turn-inputs": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "736f3290b54896c4cf1bc5a3ac4c51d403d070dcac92b321f1b409f6119c5724"
+  },
+  "foundations-rules-skills-tools/acp-skill-adapter": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e69ab058e48ba9567083c6ff4cc2ca690ea42586ee6237d8357019e283bd933b"
+  },
+  "foundations-rules-skills-tools/agents-paths": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9a686d934289a39f4cd6d441c50762a4491090a8fcdd795dd19e1771f2cd36e1"
+  },
+  "foundations-rules-skills-tools/cli-admin": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7c0f17074143390cb88e1fb87167a253a73bf6e43184a8addd63a93096d7d3b1"
+  },
+  "foundations-rules-skills-tools/cli-proxy": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3871b7b10b301bc8fb80940f2b4a67baef8588420ff01c5fba72d094845e60c1"
+  },
+  "foundations-rules-skills-tools/plugin-cli-skill": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5f6b9010dff8c68658c4f75ffd3afa757da1339670980975ece8af0d8d7035e3"
+  },
+  "foundations-rules-skills-tools/runtime-assembly": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "592e0dd3823aab47b012a5d68fbd59a2ed372e9e46ec6a4f03accf1da6eac005"
+  },
+  "foundations-rules-skills-tools/runtime-order": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "288e9c7353f60d1ef3137d2952d421b91d3c18e95443728f7296b00762f8b5ca"
+  },
+  "foundations-rules-skills-tools/sdk-admin": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4a319e3b8cc792adf724af3901033c0a513f8be45bb09a80bf8387e14c8fdd98"
+  },
+  "foundations-rules-skills-tools/skill-adapters": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ac4d66801dbe6e825f7cd20e4384744138f58833f59eea78ee7761315720cc66"
+  },
+  "foundations-rules-skills-tools/skill-discovery": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b4f786c46625dc9198c9a93005860c6a252ff20e8f15774168c8edd582e2edae"
+  },
+  "foundations-rules-skills-tools/skill-precedence": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c08fd767b0c5bcab352b1a8322a3ebcec41d557d19066692f794f755fd347f08"
+  },
+  "foundations-rules-skills-tools/tool-dispatch": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5016464f31942549a8f622ebbe5216e1c2605b0613f72e3f48222fe607d68339"
+  },
+  "foundations-rules-skills-tools/tool-registration": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0a4de7295c1ab339f5870b23f4b54f29a4dab9f8f573f0318f1a0aa2edd708ca"
+  },
+  "home/browser-control": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b94baca7dfa9998a70cab0c43fd8d622d52716a37244156565b362bf40cbf9ba"
+  },
+  "home/daemon-runtime": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d200a602222d032b7860a96ee72c613761d9b9ac2a936606a5eb9fc956dc8caa"
+  },
+  "home/provider-boundary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "11ba1e0ab4b4211e56ff94eee7193ef70c01b5c848e45ad43ed8a889bd6077a6"
+  },
+  "home/public-fallback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "home/server-policy": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "df9e8a94ef6a4e6ad4183293702b7ad421869910b211622f674cd768b1aa6baf"
+  },
+  "home/snapshot-notice": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "interface-panels-files-environment/environment-picker": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "112ccafbc82b0b3a9516018437bd06d2d61df48760573f03687de5133a8d114b"
+  },
+  "interface-panels-files-environment/new-tab": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a0dbc7c5c9ddff532f373216c1a85ad7ef05325596b01a9412638d4d7ff5ada6"
+  },
+  "interface-panels-files-environment/panel-browser-settle": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5ae43c7cbe78154506bf892a2522d9056ae41f0d51ae4ed57bc68874edbe2d44"
+  },
+  "interface-panels-files-environment/panel-content": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0207f3ec52b007ac5434ad197836f1137cc5463fc721a9468f87340182ddb4d5"
+  },
+  "interface-panels-files-environment/panel-toolbar": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d79fe4228a2416a89a7a9934a9673ec8a0f3b18b653897bf4517fe54d989c84d"
+  },
+  "interface-panels-files-environment/secondary-panel": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "330f421cc5f00e65e1dc73dba9fc86bddc0380ead1d423060ef060580d1d8ad3"
+  },
+  "interface-panels-files-environment/tab-content": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "17b24717729fc5fb558fafc0fe5a5e137324265465c002a51182aac4a0759a5e"
+  },
+  "interface-panels-files-environment/thread-read-only": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3695efd0d90a0c22b58b64d489d9f90d1e5cbf7b420113097aee7d1d1de70890"
+  },
+  "interface-panels-files-environment/worktree-picker": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7190321149125db736a01e69cca8b3757a351f73d6b5030110a7e305858d2e2a"
+  },
+  "interface-responsive-and-electron/browser-policy": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "f2721b70d5757b1c3e47ca594117ed298184bf25e4ee9de2f9ed4d4585438022"
+  },
+  "interface-responsive-and-electron/desktop-api": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0d7c1ac2b3de815cceefdcc8e1f5dcb4bd7a6a4de21401273204679d55c21a14"
+  },
+  "interface-responsive-and-electron/desktop-permissions": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8c427e4937a2545dbf7b7339024d32f1bf19681ec1a2728fea580b9f362f3323"
+  },
+  "interface-responsive-and-electron/docs-responsive": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "618f7a27415b3f641361cb9cbb61c6355d6068fa10abea8030c079bd16d5b5a7"
+  },
+  "interface-responsive-and-electron/electron-browser": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4db4c22954166c40def9c64b42321c5ed4b22b4f3569175b286be2f638e85237"
+  },
+  "interface-responsive-and-electron/electron-view": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1fc6448353936341026d0b5c29984f484e8d055d3611956872a7b637eecf1fb5"
+  },
+  "interface-responsive-and-electron/host-responsive": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "f2fb3df78505dc21578fbd61e88f9c556cb647fbb07ceb498443885bcbf17934"
+  },
+  "interface-responsive-and-electron/plugin-responsive": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "addae093db0e1b288217b6572f513f159ea88f79e15bd0d6268247a42f3d9210"
+  },
+  "interface-responsive-and-electron/secondary-responsive": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7538bc0c1396e149d7b18844bac37fb7c59089e9c8c0fbbd925dab493ae3eab5"
+  },
+  "interface-responsive-and-electron/split-fallback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "44b27fecb5edc90788f35357e75bdf1ca67b18ba000dbaf195719db1b4cddf22"
+  },
+  "interface-responsive-and-electron/web-browser-state": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1f10bd51c54bd99e0ead19a0f544ec8ade0089587f2f44eb90cb6f5c8384d7e4"
+  },
+  "interface-settings-and-extensions/automations-surface": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "94797ac5c643e65a92176204ab1cfa2a73a4b271ab1a608bd717418dc5f11bff"
+  },
+  "interface-settings-and-extensions/docs-surface": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "99a451d609a027ac55d3fdcede57fb0286b34e765abfc4d30784d12a4e6608d3"
+  },
+  "interface-settings-and-extensions/extensions-actions": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4212c0d6154bd5a4fc8792f865898152c08065dba403c8b9bd9d75b10c72d0b0"
+  },
+  "interface-settings-and-extensions/extensions-nav": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4b056e7a37e0f608dbd0d0e5e79bf88c2e54638886e07906589e6b8a76d60f15"
+  },
+  "interface-settings-and-extensions/plugin-failure-boundary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ef6dddc99fc7f180dd3152529fd82d17163840747f925d07603988f526c40952"
+  },
+  "interface-settings-and-extensions/plugin-header": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9f85a0eab04f6034b367d80f058c48bd7da34b9e7593269d073d21becc31f3b7"
+  },
+  "interface-settings-and-extensions/plugin-panel": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "af7a3ed2c8b5caf2521968fff809f5a072e4e9885149733c6dbc8538bdf28ae7"
+  },
+  "interface-settings-and-extensions/plugin-settings-slot": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d7800584bd5b34e0fb9ac617667fdbe50ee830c582ae3784a9f78c3cbe976318"
+  },
+  "interface-settings-and-extensions/plugin-slots": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c535d7dde37b715ad3c70d55a6fd34bf40709bece45ccc4dbf0788ca734ca894"
+  },
+  "interface-settings-and-extensions/settings-nav": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "05b35509892dc057781a2172d19fe95e996fec21959dd7b5f4bf9a831edbf3cb"
+  },
+  "interface-settings-and-extensions/tasks-surface": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e99f6460528ebb9c4c13186da5525d354c7de76a7b0e5bcbde1e9910f7bf69cf"
+  },
+  "interface-shell-and-navigation/app-host": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c8fd92fb3435c9b40433faf3cead1b594177a525c423fc6ecb4606332a78633c"
+  },
+  "interface-shell-and-navigation/layout-owner": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a98708c8250f6a132eb076ffef6e0ccef74ac74379a42934e1abdf22cd0bc7a1"
+  },
+  "interface-shell-and-navigation/route-aliases": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2a45b5de72538705a2194e555ec004b281b1ba9dd064e81ba6efa7a88f299443"
+  },
+  "interface-shell-and-navigation/route-grammar": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a14fcd853e99330b7c1815e76d671eff2c0616cfd1e7c8294fc3cbb1b34351da"
+  },
+  "interface-shell-and-navigation/sidebar-owner": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9941dca1978f719ba30ff5f1be564ca15a9cd181b3383448ccf8cdd0b0a2b57e"
+  },
+  "interface-shell-and-navigation/split-pane": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "44b27fecb5edc90788f35357e75bdf1ca67b18ba000dbaf195719db1b4cddf22"
+  },
+  "interface-shell-and-navigation/workspace-route": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5600b68ab9a82039d13ad510adce6db5eff1d9aaee00b47e2bb34002147c9989"
+  },
+  "interface-start-a-thread/attachment-staging": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d0091a091d446d0ee6fe95e9133073c0551b097ac22fe1c63f9ddeabf0d1fa80"
+  },
+  "interface-start-a-thread/empty-welcome": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8ba634ed59b2aa12c50f3d5018fb3fed2b3a368d56fc3894363ec29fd7003b12"
+  },
+  "interface-start-a-thread/environment-picker": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7849db88611907eb78d3abfdc6761fd72bfb372558ae2e87c3188920c5756df0"
+  },
+  "interface-start-a-thread/execution-controls": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "f51377939c016a5ad22fefddb7ff68d6acf27ad86feaefd39c1ecebe1cfc4d34"
+  },
+  "interface-start-a-thread/home-config": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "137d882f08757792d8f4bc70b394238e3a818179c0a4511251b5116eb5d00ecb"
+  },
+  "interface-start-a-thread/plugin-mentions": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b9f614b0d8a5ae0cf76b9b7a272f6e978aa1a02df28c2aec19ec2fd0aca0af37"
+  },
+  "interface-start-a-thread/prompt-box": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "26b663f49d364c3c0455b558f3bc43e3205f26febcf0287082cf163fb9745009"
+  },
+  "interface-start-a-thread/prompt-input": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "61bffb2d49723b7be89a50efcaecd860ac90f34b9bab7d850e458aa0770da786"
+  },
+  "interface-start-a-thread/submit-new-thread": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8edf31f66877f1eb69997533ac36a1c8fc52809d8d8c4588927b03f032009b65"
+  },
+  "interface-start-a-thread/worktree-picker": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7190321149125db736a01e69cca8b3757a351f73d6b5030110a7e305858d2e2a"
+  },
+  "interface-timeline-and-follow-up/expandable-row": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "668b34662ac6fbbf812aed23ecb64272608f35f6c2ca51469a3534079c626b98"
+  },
+  "interface-timeline-and-follow-up/follow-up-submission": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c72735ca91928a2c6b317091addd4f974458cab2ebd67df9142a8c9319610332"
+  },
+  "interface-timeline-and-follow-up/prompt-area": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3becd7522a902223775e6fa74b8694c602f22b40ecb62141aee29449c1860946"
+  },
+  "interface-timeline-and-follow-up/prompt-interaction-state": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b12d6b05ba6a7ab539d0f8574948184d767082b68172679f9c49685f30c67cd9"
+  },
+  "interface-timeline-and-follow-up/thread-header": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "68c760e8debd177c1bc40531d6da5442c4f44b479d2cb1afe9dfc4fce07e1446"
+  },
+  "interface-timeline-and-follow-up/thread-read-only": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3695efd0d90a0c22b58b64d489d9f90d1e5cbf7b420113097aee7d1d1de70890"
+  },
+  "interface-timeline-and-follow-up/timeline-content": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "11759c12e38a8c2da966ab111a415a9f571eec4a814e2408cd78c029b44d99e8"
+  },
+  "interface-timeline-and-follow-up/timeline-projection": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "631c3d6e6e4b8dcbd156d948ab3307ba5795d96899c478584ea8e8c0f2443ec0"
+  },
+  "interface-timeline-and-follow-up/timeline-rows": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6b561a7c9f4dd7c305feedeae66f59c67e056f655f9a98f420c94073fa6a13e9"
+  },
+  "interface-timeline-and-follow-up/timeline-surface": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "82c9e4d3cc81daf2022660c7f0837dfbf6025d3b1ff3c04396f454558a7d319b"
+  },
+  "operations-remote-access-machines/connect-browser-route": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a74fc7dde65e34ac5c80b4c711fddf5edd0a40072932055086f948892e5c958c"
+  },
+  "operations-remote-access-machines/connect-tunnel": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2f60cab30aa027709f8b7fce8be5dbfd3e4d0879f1af63d03760e81bd7aa7216"
+  },
+  "operations-remote-access-machines/daemon-enrollment": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e6ae6a582c1678b3b836c7a0256ec671f3c7a2252328a93bc946ebd173fa8844"
+  },
+  "operations-remote-access-machines/daemon-exchange": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1a9a97d04fb7e7a2bb87aa34940a610786ef94dc025016bdd22c58b85879eb8e"
+  },
+  "operations-remote-access-machines/host-key-persistence": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9a3555cd09f9baa8d419760155ed68fe59212c920f7ddfafe1b3ec2d2bda8ee5"
+  },
+  "operations-remote-access-machines/host-key-session": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8acbe48ad5cb1490d208259dcb47201ce2d01fad1e3c8fa7b7ae1415f669736e"
+  },
+  "operations-remote-access-machines/host-local-data": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "db59ebec6082f486737ff92b41ccc34dcb32439ba2269e6641daecdddffc0d32"
+  },
+  "operations-remote-access-machines/host-management-gate": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7cd9f325b7fb816356f6914146d6f9be8ba2ce742f5219ae8aa2e98628987b16"
+  },
+  "operations-remote-access-machines/host-revocation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b538ac126cf4cf0a7fbefeb6e1ac55820d8404744382daeb33bfef65de30cba6"
+  },
+  "operations-remote-access-machines/hosted-frames": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3bec411844c908866102d3c8afda6621b2dc6a553aee0a70a7807dc79984df26"
+  },
+  "operations-remote-access-machines/hosted-retention-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3bec411844c908866102d3c8afda6621b2dc6a553aee0a70a7807dc79984df26"
+  },
+  "operations-remote-access-machines/local-process-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "70abe50410d09647830eeef79186bea31327c5054e8c0639c2a8b6d10b2488c7"
+  },
+  "operations-remote-access-machines/local-roles": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b94baca7dfa9998a70cab0c43fd8d622d52716a37244156565b362bf40cbf9ba"
+  },
+  "operations-remote-access-machines/loopback-rewrite": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4ef89cd538ef92e2370036a4acf77fbcf2ba9c1627c6f3bbeff93dd08bd7c8eb"
+  },
+  "operations-remote-access-machines/machine-credential": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9afde68a5a3c9db9b75ef3942aa36f0cabbd34397505d32a38363193eab2fb75"
+  },
+  "operations-remote-access-machines/machine-gate": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1f2caaf5add0e56adb7995173c677d3f8e33d57a88a10611b2ea905835906d2c"
+  },
+  "operations-remote-access-machines/owner-session": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "dcb42e77d3e0e6f626c92dfa1e0bc32a5a5a881e7ead4365667ad1125fe71cf7"
+  },
+  "operations-remote-access-machines/permission-ceiling": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a2f6bdb9ef4538fb077fb46a620a7676eddc7a90ee79c48b2519726824700a2f"
+  },
+  "operations-remote-access-machines/port-share-forwarding": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d6ce3f45fd8eed106858d891d52bcd761bf14c6b6d5e5ccf7696544580483f84"
+  },
+  "operations-remote-access-machines/port-share-registration": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c263d81d2c973710c96a1802984aeeb29f04ba11db3fb73771214590a2ed1f9e"
+  },
+  "operations-remote-access-machines/provider-token-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0a0b5c421682a6b973cb1e5381f5db2448dc93d55558795de03eef597076f7ec"
+  },
+  "operations-remote-access-machines/server-loopback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "df9e8a94ef6a4e6ad4183293702b7ad421869910b211622f674cd768b1aa6baf"
+  },
+  "operations-self-hosting-security/browser-csrf": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b82786c3601349b3771aabff6ba3b02a6864a2ffcf5b2b12196db197aaef34d6"
+  },
+  "operations-self-hosting-security/connect-config": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3cd359f81e021baba64cb232b3a8074792cea83b5aeeb5164872b907189dbe0a"
+  },
+  "operations-self-hosting-security/daemon-rebinding": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8aae80307a03aebce2b10520fd4c8926f99ff407a7a2131b930f614c3a95edf6"
+  },
+  "operations-self-hosting-security/dns-rebinding": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8aae80307a03aebce2b10520fd4c8926f99ff407a7a2131b930f614c3a95edf6"
+  },
+  "operations-self-hosting-security/enrollment-replay": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1ff29a6ab38bddd3137d64ee24d263a1c8df26d657461f2af9a3cec859e418fc"
+  },
+  "operations-self-hosting-security/hosted-retention-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3bec411844c908866102d3c8afda6621b2dc6a553aee0a70a7807dc79984df26"
+  },
+  "operations-self-hosting-security/loopback-default": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "df9e8a94ef6a4e6ad4183293702b7ad421869910b211622f674cd768b1aa6baf"
+  },
+  "operations-self-hosting-security/machine-credential": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9afde68a5a3c9db9b75ef3942aa36f0cabbd34397505d32a38363193eab2fb75"
+  },
+  "operations-self-hosting-security/machine-management": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d296e19584326f3cec869ba61e7cb4536d91a7abe5cfb76f4bb20eb811241f0b"
+  },
+  "operations-self-hosting-security/machine-proxy": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4675a92206bb196855752d4968be5f230433192861bda17de8d3557333c3f969"
+  },
+  "operations-self-hosting-security/origin-guard": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b82786c3601349b3771aabff6ba3b02a6864a2ffcf5b2b12196db197aaef34d6"
+  },
+  "operations-self-hosting-security/permission-ceiling": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a2f6bdb9ef4538fb077fb46a620a7676eddc7a90ee79c48b2519726824700a2f"
+  },
+  "operations-self-hosting-security/plugin-trust": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1e3ebc28b6cde7d40bf7559f820bd5816f69c557dfb8e89d729b51d7840d0b82"
+  },
+  "operations-self-hosting-security/private-network": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3283b0fa5504ad1dfcc954d00377084ec13bfe385c91bc5be836d927a6043b71"
+  },
+  "operations-self-hosting-security/provider-token-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0a0b5c421682a6b973cb1e5381f5db2448dc93d55558795de03eef597076f7ec"
+  },
+  "operations-self-hosting-security/self-hosting-runbook-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1f9a835c64df808f14b641c746a3e654ec9f2951a6620b37fbeae98aaf823d9c"
+  },
+  "operations-self-hosting-security/server-credential": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6088b9770f8e394974343e4c60aca0f87c9fe56684dba25c8d7f02255d41ce64"
+  },
+  "operations-self-hosting-security/share-target": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c263d81d2c973710c96a1802984aeeb29f04ba11db3fb73771214590a2ed1f9e"
+  },
+  "operations-self-hosting-security/update-install": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8995ca2f4e6cd8e7e1face7c26a38bf0f64b714afd5e90bce279c34663e43ce1"
+  },
+  "operations-self-hosting-security/update-order": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "13a673f05f9a4b1bc4caf0afc3a9f161b73c2c5c0b468eab2abea9adac695e0c"
+  },
+  "operations-self-hosting-security/update-signature-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "aa5b2996484d6ae2426db8cd95a1a96e5b7ee4102bd27cd0653da077b544d1f6"
+  },
+  "operations-self-hosting-security/update-transport": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "aa5b2996484d6ae2426db8cd95a1a96e5b7ee4102bd27cd0653da077b544d1f6"
+  },
+  "operations-self-hosting-security/wildcard-bind": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0a9adff9cc5a48f980b11d9f2e9bb295d00bce05b4b9d67fb121562214cc6de2"
+  },
+  "operations-self-hosting-security/wildcard-warning": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0a9adff9cc5a48f980b11d9f2e9bb295d00bce05b4b9d67fb121562214cc6de2"
+  },
+  "orientation-source-and-fork/independent-notice": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "orientation-source-and-fork/merge-rule": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "orientation-source-and-fork/provider-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "11ba1e0ab4b4211e56ff94eee7193ef70c01b5c848e45ad43ed8a889bd6077a6"
+  },
+  "orientation-source-and-fork/public-fallback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "orientation-source-and-fork/public-status-unknown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "orientation-source-and-fork/snapshot-identity": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ee0a05b3da8cff839f2421acdaa4dc70d0c32743d0738a2d011286d30bb639e6"
+  },
+  "orientation-source-and-fork/snapshot-record": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "orientation-source-and-fork/source-record": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ee0a05b3da8cff839f2421acdaa4dc70d0c32743d0738a2d011286d30bb639e6"
+  },
+  "orientation-system-map/browser-control": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b94baca7dfa9998a70cab0c43fd8d622d52716a37244156565b362bf40cbf9ba"
+  },
+  "orientation-system-map/connect-tunnel": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2f60cab30aa027709f8b7fce8be5dbfd3e4d0879f1af63d03760e81bd7aa7216"
+  },
+  "orientation-system-map/event-rows": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "06189971975099c502d546b3ae479d5cc5ac6d91ecaa93fe999b66f4ac62c338"
+  },
+  "orientation-system-map/plugin-surfaces": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c535d7dde37b715ad3c70d55a6fd34bf40709bece45ccc4dbf0788ca734ca894"
+  },
+  "orientation-system-map/provider-internals": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5d68c84d9b06420f1f9b81bbdf01e8b8c20feb7888febea9030e8f305f633cf5"
+  },
+  "orientation-system-map/runtime-owner": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e75fc08fb11448007cda2ae281c552af5e775d4ca7c605e8b8dbabd0df6e0251"
+  },
+  "orientation-system-map/server-listener": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "df9e8a94ef6a4e6ad4183293702b7ad421869910b211622f674cd768b1aa6baf"
+  },
+  "orientation-system-map/thread-storage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "559b12087669bd7a126c361c2e7a0558c69709a70d90b4175b5a8af3ef9b3b66"
+  },
+  "plugins-backend-powers/agent-config": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "83c48fa668d4c8006276dee7803282d5eb76d194cb08562c5b1bf3f3dc8332a8"
+  },
+  "plugins-backend-powers/agent-tools": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8a1475783a006d8cfaaf65db85c624be371eb60981377a8ba98f7d43d85e3d8c"
+  },
+  "plugins-backend-powers/cli": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e491ef2e23e1b6ad6b6d8b49607f38cc25d377d33e4476798e642eb27367ca4c"
+  },
+  "plugins-backend-powers/host-declarations": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3c6a235451f7f65438a64da6518bf3f56d5a070ae48cb813ea831fc714af46ca"
+  },
+  "plugins-backend-powers/http": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1f9fe59dd6a12643c71c67839493349139cc71519b38134326469b23fc0d5898"
+  },
+  "plugins-backend-powers/realtime": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8f53c34b871be354aa2fb877f270599dd21fc25d411868ad93e5284f083e271b"
+  },
+  "plugins-backend-powers/render-proof-limit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "plugins-backend-powers/rpc": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "07fc8255c3f3cab0264946b98387bd7bb2178e796951d0fa33652597f60a35d4"
+  },
+  "plugins-backend-powers/schedules": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "85fb325fc63d783fff7cdbe3bd29eda7b626f5245f6d5a5f77000e3232680b5b"
+  },
+  "plugins-backend-powers/service": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "211cabc2e77a21e376e0d5e8e734e5124309bd44ee65fcfbb55da11eedfa07dc"
+  },
+  "plugins-backend-powers/settings": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9fca2bbe19dabf824012753ec6e4961b164fa9be4f0f77277e5cbd8b16d2d851"
+  },
+  "plugins-backend-powers/storage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "91458c0cc4d1065bbfea5ba126ac96860511748c9d818f7106d7eba7a8643be0"
+  },
+  "plugins-backend-powers/thread-events": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d71f952c3b3f0ff4574edca51bde956aaa7f65b0de97af0a407521f653145d35"
+  },
+  "plugins-backend-powers/thread-spawn": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1c85f08fddeb277b1f2cf88317a30a5dc5d31afd7d28615b42b152722fa34fb3"
+  },
+  "plugins-backend-powers/ui-interaction": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a763f07526c2d47cfd3f4475362febd82de027e89cc95551db338c49fc12ee63"
+  },
+  "plugins-compatibility-trust-fallbacks/app-artifact-gate": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ad772e89610b23720f6fbe5d57c36ab7731259d60621aa1fab22a8c193b207aa"
+  },
+  "plugins-compatibility-trust-fallbacks/app-build": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "627e853c40d43a90ab56817868c6c72befd715baa0746c62a1225a5fff978242"
+  },
+  "plugins-compatibility-trust-fallbacks/content-script-lifecycle": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6395168530ea9ccb855c3e9bd13369a147d238a6a912f9ef8711dd99d632b106"
+  },
+  "plugins-compatibility-trust-fallbacks/content-script-trust": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1aa672efbc77bed4be234bb00cba57b3c48c92d44c986c94b5521c4a6dcf67e0"
+  },
+  "plugins-compatibility-trust-fallbacks/css-scope": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "84e79fe1f7422c9f8e9fe014bf46bdf0a826a4b5a64b5d30152cc48596bba31b"
+  },
+  "plugins-compatibility-trust-fallbacks/frontend-cleanup": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "77cad4f1a811683171453b03387e0dc204320f07d2d13b6abccfab846c08e9e4"
+  },
+  "plugins-compatibility-trust-fallbacks/frontend-failure": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6fa49de6ed09e3d8c7f9aa87f6b29f53dc62aa477e98b14b0c00ada21307ff70"
+  },
+  "plugins-compatibility-trust-fallbacks/host-authority": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "f51377939c016a5ad22fefddb7ff68d6acf27ad86feaefd39c1ecebe1cfc4d34"
+  },
+  "plugins-compatibility-trust-fallbacks/install-sources": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d49d741b90c354b6551670d5eebffb565b2492cd5eb56fa24cc714772e1839f2"
+  },
+  "plugins-compatibility-trust-fallbacks/list-fallback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "fcfbae5a5c7ed739d20ea8be8058a560c4af8b51687930d803851ab5dbd9200c"
+  },
+  "plugins-compatibility-trust-fallbacks/pending-fallback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7f72f9966d5e0671f10ab97bf23d0916f464485c9977b16f12ec552a238c6cc6"
+  },
+  "plugins-compatibility-trust-fallbacks/prior-generation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bb0760bc0dc49e0a93bab7750899207110df36df201055955c167e64457053ed"
+  },
+  "plugins-compatibility-trust-fallbacks/render-proof-limit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "plugins-compatibility-trust-fallbacks/running-sdk": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bab376d7f302792eddc64f0b4642f1b1549c3f579583deaf36c1c0af708171ca"
+  },
+  "plugins-compatibility-trust-fallbacks/sdk-range": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7430b5d134cc69e2626bc2b5a57453b8e06b97557778980e3bb197362853170c"
+  },
+  "plugins-compatibility-trust-fallbacks/server-artifact-gate": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "65539819d5e50b7a1184dc627765de79aa93ce871a021de419c8fa784ad95250"
+  },
+  "plugins-compatibility-trust-fallbacks/slot-boundary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ffd4c97023285f53746eba09dd78b4fc0d2db0feb6f8315fc97b0d9fb4f2d3d6"
+  },
+  "plugins-compatibility-trust-fallbacks/thread-action-contradiction": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2998c0d16cafa70bbae021838fc57dada821a988aef3a6fc85a1210826f08207"
+  },
+  "plugins-model-and-lifecycle/app-build": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "627e853c40d43a90ab56817868c6c72befd715baa0746c62a1225a5fff978242"
+  },
+  "plugins-model-and-lifecycle/candidate-generation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d90085ce4085bc6ca05bcdee70d982e31d1cc6ccbd615c289e986f5cc97ff53c"
+  },
+  "plugins-model-and-lifecycle/dispose-hooks": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bb0760bc0dc49e0a93bab7750899207110df36df201055955c167e64457053ed"
+  },
+  "plugins-model-and-lifecycle/frontend-disposal": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "77cad4f1a811683171453b03387e0dc204320f07d2d13b6abccfab846c08e9e4"
+  },
+  "plugins-model-and-lifecycle/frontend-reconcile": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "25d6dfb276fef25a680f8cd507b8c3dc53e3b6b24184548e1bc4e6e7543f1a61"
+  },
+  "plugins-model-and-lifecycle/full-trust": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "22ac74eea24132c276096b7b50feb0b92048cb7cff0175e56152bb7fa023445f"
+  },
+  "plugins-model-and-lifecycle/install-sources": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d49d741b90c354b6551670d5eebffb565b2492cd5eb56fa24cc714772e1839f2"
+  },
+  "plugins-model-and-lifecycle/manifest-gate": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6574a83860e3d462974f657bea66f1e13af59fbcf36994a057cc2e78c2649071"
+  },
+  "plugins-model-and-lifecycle/reload-rollback": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e3989f59c626fc6fe0fb772364c25214af5d82e9ca44f6bc1787c5d1775f4c1f"
+  },
+  "plugins-model-and-lifecycle/render-proof-limit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "plugins-model-and-lifecycle/server-factory": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d6395698e987146304cc08310c95082cce709fccb3a9571078fc74acfcc1aa13"
+  },
+  "plugins-model-and-lifecycle/service-stop": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b52aaaa41394f8fd698de32e525ad160f26e28c1ca61dc1c6ac748ce9e39b6b4"
+  },
+  "plugins-ui-surface-atlas/composer-host": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "df2ad82586c6933b743a00fe5ed04ff5d3e3c5754b17f5b8d2c1441989ea2950"
+  },
+  "plugins-ui-surface-atlas/exp-composer": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7c8c9015fa982086feab09a62c649974cd6d23f381a9fbc938e7a88312240630"
+  },
+  "plugins-ui-surface-atlas/exp-file-preview": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a1fa5303334d653946854fe48c42c265363c179e4f642d2835ff6605108a4522"
+  },
+  "plugins-ui-surface-atlas/exp-model-tab": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5c1565037c4b865347c99d0e73dfd39f37e5eb50044aaa374796b6984f57ebba"
+  },
+  "plugins-ui-surface-atlas/exp-sidebar-hooks": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "92158d64d02536f016bdf0363ab63d9f43e6a74d8d465ec8a0400ecabe44ab18"
+  },
+  "plugins-ui-surface-atlas/exp-slot-contract": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4632f1203e843e5d9b3171f4f9f49b9721a92999e5ca86a4f9f7b18fc6dde08a"
+  },
+  "plugins-ui-surface-atlas/exp-status": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8ab8694b9a5769c3382e420a787e22c96ef6f849cba1adefb2cba2850a394322"
+  },
+  "plugins-ui-surface-atlas/exp-status-labels": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "011355b2bd7bd27a235eb7d963993275e23ff6d0f673a928890b6f4b1bb7241f"
+  },
+  "plugins-ui-surface-atlas/nav-panel-host": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4dcc3f03374eaf0198f34b8b1fcbfa4b60cebb058b118eabc4d4ac54af903beb"
+  },
+  "plugins-ui-surface-atlas/panel-host": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "af7a3ed2c8b5caf2521968fff809f5a072e4e9885149733c6dbc8538bdf28ae7"
+  },
+  "plugins-ui-surface-atlas/render-proof-limit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": null
+  },
+  "plugins-ui-surface-atlas/slot-boundary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ffd4c97023285f53746eba09dd78b4fc0d2db0feb6f8315fc97b0d9fb4f2d3d6"
+  },
+  "plugins-ui-surface-atlas/stable-composer": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "dc35afcb2cc22faab880975fec4d3ba706b1e586d4a0d5105f593881bf3efc82"
+  },
+  "plugins-ui-surface-atlas/stable-content-scripts": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "bb756a63689b7eeb8a37d03cf6795c32c64f4f3da58f12503e8fc246ca2b5de9"
+  },
+  "plugins-ui-surface-atlas/stable-file-message": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "54324001c4710339f3ac92349a5058262db01c775319889639a70915ab7357ae"
+  },
+  "plugins-ui-surface-atlas/stable-hooks": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "12b442ea51adfd71288ddbae78e243f877df0b80b6c538d3df7c1c87421a2338"
+  },
+  "plugins-ui-surface-atlas/stable-markdown": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "f14f357fa10b54d34cb4c11f075888d336bd125c7a8bed70152af6c41b263e4e"
+  },
+  "plugins-ui-surface-atlas/stable-rich-text": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2a0fa07d73cb5007bc4341429a415dad2833c3461e8249ca05c50a691116e5da"
+  },
+  "plugins-ui-surface-atlas/stable-slot-contract": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5e964ac74964bb2e754f2905b78256d9d065e47bd56e2d91792741b53693067e"
+  },
+  "plugins-ui-surface-atlas/stable-thread-chat": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9a287f52d082230584d9fe7b1de53e98d4d0833c06b4dc98477faec697b89989"
+  },
+  "runtime-agent-input/attachment-stage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1a10168f1437453d04086829b3113b6ea3da92dd2b755e394a7b6bba3580b6cc"
+  },
+  "runtime-agent-input/attachment-validation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "fc9f67a7c38040f571c557a984754463a1c155eeac63efd6c7745e343bbf48e4"
+  },
+  "runtime-agent-input/dynamic-boundary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a7a10b5beb3cd6208009c4a1545fd912434c8e938d0496483f436e8fb784230b"
+  },
+  "runtime-agent-input/instruction-order": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "288e9c7353f60d1ef3137d2952d421b91d3c18e95443728f7296b00762f8b5ca"
+  },
+  "runtime-agent-input/optimistic-preview": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "583d573e09ea1d162807ced6c2c4c919c15e82cea97cf3f4295919834871c4c6"
+  },
+  "runtime-agent-input/plugin-context": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b9f614b0d8a5ae0cf76b9b7a272f6e978aa1a02df28c2aec19ec2fd0aca0af37"
+  },
+  "runtime-agent-input/prompt-schema": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "61bffb2d49723b7be89a50efcaecd860ac90f34b9bab7d850e458aa0770da786"
+  },
+  "runtime-agent-input/provider-interpretation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e75fc08fb11448007cda2ae281c552af5e775d4ca7c605e8b8dbabd0df6e0251"
+  },
+  "runtime-agent-input/runtime-command-fields": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5405f4d2baece3729b3d59530886ee6cbaeabc8c8daf96c61df2200da9361555"
+  },
+  "runtime-agent-input/skill-catalog": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5f257ec8a8dab41463637b11cd485f0d42379476e21113c4891051d620b18005"
+  },
+  "runtime-agent-input/thread-storage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "559b12087669bd7a126c361c2e7a0558c69709a70d90b4175b5a8af3ef9b3b66"
+  },
+  "runtime-agent-input/tool-dispatch": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5016464f31942549a8f622ebbe5216e1c2605b0613f72e3f48222fe607d68339"
+  },
+  "runtime-agent-input/workspace-instructions": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "9a686d934289a39f4cd6d441c50762a4491090a8fcdd795dd19e1771f2cd36e1"
+  },
+  "runtime-events-and-persistence/delta-query": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0783af12ad80da780fe520370779d30e29ca1514508bf4bceaab2abbbc8b5f61"
+  },
+  "runtime-events-and-persistence/hub-broadcast": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ce394c984de8c672af3513f0fdf0e3b479a2e463aa80f68dd145c51e354ba71e"
+  },
+  "runtime-events-and-persistence/lifecycle-effects": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "82fff9ececb08c107729f333cc349318d2c667fcd738081adf60dea544a47efd"
+  },
+  "runtime-events-and-persistence/outline-projection": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "a448d4aeacb775570c092541aeea25add178ba49e4fee19c204f7bbb757bfa8f"
+  },
+  "runtime-events-and-persistence/post-events": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "4893c758c95aae5401a8dcfe9213c626231c70ba1e30415cf73a9792ba79eacf"
+  },
+  "runtime-events-and-persistence/projection-boundary": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d8272c9a08f269186ac780da22b165f2dd799db91146c4609d73e36cc6225eb8"
+  },
+  "runtime-events-and-persistence/provider-events": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8e07f42c2a8d48c980bab500e1e777c1c2bdbea4458ad6f4a905927a70fb7cb6"
+  },
+  "runtime-events-and-persistence/provider-identifiers": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7dafcd53c7c3bfe8cf54c7e83bca0250a599a620013bfd92818c952cfeed7697"
+  },
+  "runtime-events-and-persistence/realtime-subscription": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "1908e5d30ed1062aae4de702a64b864eeab5152ecb9359ae9fc4a2ca7897b9f1"
+  },
+  "runtime-events-and-persistence/server-ingress": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "06189971975099c502d546b3ae479d5cc5ac6d91ecaa93fe999b66f4ac62c338"
+  },
+  "runtime-events-and-persistence/sink-delivery": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3e7e0a16d362a3290cb65ddb9e55c467088b3af665f22ac288f60b22040d5d51"
+  },
+  "runtime-events-and-persistence/sink-memory-queue": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d1ae39f0fb37fda0134ec7fec25661bf7cfae304888d540bb72f1092ff8ad1a2"
+  },
+  "runtime-events-and-persistence/stored-read": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "798e087a5c995e5ce13880cd016d3863cd732ec775c256183c0ba66cf519dbf5"
+  },
+  "runtime-events-and-persistence/stored-row": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "28cc286b609e30e1eff00a0bf78fe2c77b5bf9e3d4759e00f74373c53ec5b29d"
+  },
+  "runtime-events-and-persistence/timeline-output": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "46ec00b0c7d12dc59ff7b4fc3b77ab73b197353fc9ecf510f6b4afbf2356f351"
+  },
+  "runtime-events-and-persistence/timeline-window": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d8272c9a08f269186ac780da22b165f2dd799db91146c4609d73e36cc6225eb8"
+  },
+  "runtime-failure-restart-compaction/compaction-events": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "da1a1412eb3855726bb60a048568f852b763900f73c93e6e70a0f219265830c1"
+  },
+  "runtime-failure-restart-compaction/context-usage": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "46ec00b0c7d12dc59ff7b4fc3b77ab73b197353fc9ecf510f6b4afbf2356f351"
+  },
+  "runtime-failure-restart-compaction/disconnect-grace": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "60baed0349f58a20233e4aa71dc028ac3ca70372e672aa5d891646926e3b0e89"
+  },
+  "runtime-failure-restart-compaction/durable-state": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6be1bf18f4b66160ec6c684e4cdbd73fbc213073efe6d86cab74e17fb3da1f8a"
+  },
+  "runtime-failure-restart-compaction/failure-effects": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "01c5074923f0321b46ba66c7adb2c7dc1ab85c13f2073279ed89fc19eb66fe53"
+  },
+  "runtime-failure-restart-compaction/manual-compact": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "7642d7d04be3cd7faa20204cf82b964d83c3626636c6e93401cb7993250abcef"
+  },
+  "runtime-failure-restart-compaction/provider-compaction-gap": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "da1a1412eb3855726bb60a048568f852b763900f73c93e6e70a0f219265830c1"
+  },
+  "runtime-failure-restart-compaction/provider-exit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ef9669a3be2d0fe1eaaa3b5df30b82ba66bd317e8ea29c8f86453f321cd9baf6"
+  },
+  "runtime-failure-restart-compaction/read-side-compaction": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3c1afc7202b90d90de373e0242aaccfc262d1f42d59805bb402ce2d7263f00c5"
+  },
+  "runtime-failure-restart-compaction/reconciliation": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "af51a46c04e52731f8821a4bab24419bf048653f0ad7a98de7971de9daf17582"
+  },
+  "runtime-failure-restart-compaction/resume-limit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6be1bf18f4b66160ec6c684e4cdbd73fbc213073efe6d86cab74e17fb3da1f8a"
+  },
+  "runtime-failure-restart-compaction/runtime-state": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "6be1bf18f4b66160ec6c684e4cdbd73fbc213073efe6d86cab74e17fb3da1f8a"
+  },
+  "runtime-failure-restart-compaction/same-instance-reconnect": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "962ef6c81bf76298dcc4e63cb7bebecc4742976e6fdf67dadb790f9480d84c94"
+  },
+  "runtime-failure-restart-compaction/session-open": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "f899f852685917c40b7c65ee03fd2fa6e6672935cc6d5593d55c374694f2b0c2"
+  },
+  "runtime-failure-restart-compaction/sink-loss": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d1ae39f0fb37fda0134ec7fec25661bf7cfae304888d540bb72f1092ff8ad1a2"
+  },
+  "runtime-failure-restart-compaction/timeline-budget": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "8e80d97732f09c5442ecdf6e968d3070f59d6ad4994f99363334bfcdb2632488"
+  },
+  "runtime-runtime-boundaries/daemon-dispatch": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "ab386e222e18f6ce029992547dbc28f8b06ad42a815b081c36563376004e3c30"
+  },
+  "runtime-runtime-boundaries/daemon-start-resume": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "11ba1e0ab4b4211e56ff94eee7193ef70c01b5c848e45ad43ed8a889bd6077a6"
+  },
+  "runtime-runtime-boundaries/missing-provider-id": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "b33a2d3cba44a76f720dc73b5e76b4357f9538f5170f2ea319da876de3ec0d10"
+  },
+  "runtime-runtime-boundaries/owner-release": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "c8332343ec0a5802c7c27def95b67a2d5e28dbe2542b3b67456e05d77dbe5ce4"
+  },
+  "runtime-runtime-boundaries/provider-gap": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e75fc08fb11448007cda2ae281c552af5e775d4ca7c605e8b8dbabd0df6e0251"
+  },
+  "runtime-runtime-boundaries/runtime-entry": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e75fc08fb11448007cda2ae281c552af5e775d4ca7c605e8b8dbabd0df6e0251"
+  },
+  "runtime-runtime-boundaries/server-start-command": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "5405f4d2baece3729b3d59530886ee6cbaeabc8c8daf96c61df2200da9361555"
+  },
+  "runtime-runtime-boundaries/server-submit-command": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "d880400f36070523172f5d26145a4030fb051feb258c546d0e5b8fc44845fe8f"
+  },
+  "runtime-send-queue-start/history-replacement": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "60204c2ee1d011757d69cf39b53b1521c98bf18c036182f06eaa0453db6465c6"
+  },
+  "runtime-send-queue-start/live-command": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "70aa780c27fb0363ae7ed8da58186aba95a69a452f6d56abdb340e106169488b"
+  },
+  "runtime-send-queue-start/optimistic-row": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "583d573e09ea1d162807ced6c2c4c919c15e82cea97cf3f4295919834871c4c6"
+  },
+  "runtime-send-queue-start/queue-route": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "2e5fb21f219774d006d58da91db30fbf7fea22972d6443028bee83c367d7647c"
+  },
+  "runtime-send-queue-start/request-event": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "3ef08c640e37dbdaa76a053c830bf459b0b2cfff1906eb579f5420cce871a193"
+  },
+  "runtime-send-queue-start/start-vs-submit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "e840c5fe1609c366c2e7c86537ef28cca091a1c0554f69cfa6fce22a6c339359"
+  },
+  "runtime-send-queue-start/target-resolution": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "cd63d9f0d7e1b088fc9ce3608e7101ba21c571e5c9a35b15446478e25a86d806"
+  },
+  "runtime-send-queue-start/ui-submit": {
+    "status": "local-only",
+    "publicUrl": null,
+    "verifiedAt": null,
+    "windowSha256": "0b3cae5318a3ee27668baec7944a30b4f668733cfeeecb93ca73613812fc73bb"
+  }
+}
