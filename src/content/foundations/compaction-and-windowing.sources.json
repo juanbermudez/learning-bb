@@ -1,0 +1,278 @@
+[
+  {
+    "id": "provider-context-usage",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Provider context usage records used tokens, model context window, and estimated or unknown state.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/thread-view/src/thread-context-window-usage.ts",
+    "symbol": "ThreadContextWindowUsage",
+    "lineStart": 18,
+    "lineEnd": 97,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "context-usage-event",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Provider events carry context-window usage as a distinct payload from ordinary timeline rows.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/provider-event.ts",
+    "symbol": "thread/context-window-usage",
+    "lineStart": 554,
+    "lineEnd": 565,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-budget",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server timelineWindowEventBudget feature flag defaults to 1,500 events.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/feature-flags.ts",
+    "symbol": "timelineWindowEventBudget",
+    "lineStart": 15,
+    "lineEnd": 37,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-window",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The timeline builder applies segment, event, and byte bounds and can cut a display page at a sequence cursor.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/timeline.ts",
+    "symbol": "buildTimelineWindow",
+    "lineStart": 1004,
+    "lineEnd": 1083,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-byte-window",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Timeline byte limits and sequence cursors bound read-side projection work rather than provider prompt tokens.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/timeline.ts",
+    "symbol": "timeline page bounds",
+    "lineStart": 1084,
+    "lineEnd": 1145,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "manual-compaction-route",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The writable compact route requires an idle or errored thread and sends a standalone built-in compact request.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/routes/threads/actions.ts",
+    "symbol": "compactThread",
+    "lineStart": 132,
+    "lineEnd": 162,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "manual-compaction-support",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Manual compaction is advertised for Codex, Claude Code, Pi, and OpenCode ACP, but not Cursor or custom ACP.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/agent-providers/src/catalog.ts",
+    "symbol": "supportsManualCompaction",
+    "lineStart": 403,
+    "lineEnd": 406,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "compaction-events",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Provider compaction completion is represented by thread/compacted lifecycle events carrying provider identity.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/provider-event.ts",
+    "symbol": "thread/compacted",
+    "lineStart": 432,
+    "lineEnd": 440,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "timeline-summary",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Timeline assembly performs compactThreadTimelineSummaryEvents during server projection before building the visible timeline.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/timeline.ts",
+    "symbol": "compactThreadTimelineSummaryEvents",
+    "lineStart": 1617,
+    "lineEnd": 1696,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "durable-event-rows",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server authenticates incoming daemon events and appends mapped event rows in one immediate transaction.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/internal/events.ts",
+    "symbol": "postEvents",
+    "lineStart": 860,
+    "lineEnd": 939,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "thread-storage",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Thread storage has a confined thread-storage root that remains separate from the live runtime process.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/thread-storage.ts",
+    "symbol": "resolveThreadStorageRoot",
+    "lineStart": 25,
+    "lineEnd": 68,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "runtime-shutdown",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Runtime shutdown clears process-local runtime entries and provider processes without destroying the workspace.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/agent-runtime/src/runtime.ts",
+    "symbol": "shutdownAll",
+    "lineStart": 320,
+    "lineEnd": 335,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

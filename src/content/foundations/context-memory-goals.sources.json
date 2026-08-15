@@ -1,0 +1,324 @@
+[
+  {
+    "id": "turn-inputs",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Prompt inputs can carry an agent-only visibility value for context that is not shown as ordinary user-visible text.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/shared-types.ts",
+    "symbol": "PromptInput.visibility",
+    "lineStart": 162,
+    "lineEnd": 167,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "agent-only-context",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Plugin mentions are resolved at send time and appended as agent-only context before persistence and dispatch.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/plugins/plugin-mentions.ts",
+    "symbol": "resolvePluginMentionContextInputs",
+    "lineStart": 30,
+    "lineEnd": 63,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "queued-agent-only",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Queued sends use the same agent-only context path as direct sends.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/queued-messages.ts",
+    "symbol": "buildQueuedPromptInputs",
+    "lineStart": 301,
+    "lineEnd": 316,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "prompt-history",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Prompt history is durable, bounded recall metadata scoped to a project or thread; reading it does not inject every historical entry into the provider prompt.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/prompt-history.ts",
+    "symbol": "listPromptHistory",
+    "lineStart": 50,
+    "lineEnd": 94,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "memory-records",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The BB memory plugin stores durable SQLite records with scope, details, versions, timestamps, soft deletion, and append-only history.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/memory/server.ts",
+    "symbol": "memory record mutations",
+    "lineStart": 445,
+    "lineEnd": 524,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "memory-catalog",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "BB memory injects a bounded catalog of summaries and directs the agent to bb memory search and get for progressive disclosure.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/memory/server.ts",
+    "symbol": "renderCatalog",
+    "lineStart": 783,
+    "lineEnd": 830,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "memory-skill-recommendation",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The bundled memory skill recommends disabling provider-native memory to avoid duplicate systems.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "plugins/memory/skills/memory/SKILL.md",
+    "symbol": "provider-native memory guidance",
+    "lineStart": 8,
+    "lineEnd": 23,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "native-memory-defaults",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The inspected app settings default Codex native memory and Claude native auto-memory to true.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/app-settings.ts",
+    "symbol": "provider memory defaults",
+    "lineStart": 23,
+    "lineEnd": 58,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "native-memory-config",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Thread command configuration resolves provider memory settings and passes memoryEnabled into runtime commands.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/thread-commands.ts",
+    "symbol": "memoryEnabled",
+    "lineStart": 201,
+    "lineEnd": 209,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "goal-record",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "A thread goal record stores an objective, status, budget, usage, source sequence, and update time.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/thread-timeline-goal.ts",
+    "symbol": "ThreadTimelineGoal",
+    "lineStart": 3,
+    "lineEnd": 21,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "goal-events",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Provider events define goal updated and goal cleared states, and scope them as thread metadata rather than ordinary turn transcript.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/domain/src/provider-event.ts",
+    "symbol": "thread/goal/updated / thread/goal/cleared",
+    "lineStart": 431,
+    "lineEnd": 455,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "goal-waiter",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "RuntimeThreadGoalState tracks provider goal-clear events so a caller can wait for durable confirmation.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/agent-runtime/src/runtime-thread-goal-state.ts",
+    "symbol": "RuntimeThreadGoalState",
+    "lineStart": 15,
+    "lineEnd": 86,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "goal-clear-route",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The clear-goal route requires an active goal, waits for the live host operation, and verifies that durable goal state is cleared.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/routes/threads/actions.ts",
+    "symbol": "clearThreadGoal",
+    "lineStart": 556,
+    "lineEnd": 617,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "goal-shutdown",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Runtime shutdown clears in-memory goal maps, leaving the event and database record as the durable authority.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/agent-runtime/src/runtime.ts",
+    "symbol": "clearRuntimeThreadGoals",
+    "lineStart": 2239,
+    "lineEnd": 2252,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]

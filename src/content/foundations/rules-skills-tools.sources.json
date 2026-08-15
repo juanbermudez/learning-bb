@@ -1,0 +1,301 @@
+[
+  {
+    "id": "agents-paths",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "BB reads data-directory AGENTS.md and workspace .bb/AGENTS.md through distinct instruction readers.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/workspace-agent-instructions.ts",
+    "symbol": "DATA_DIR_AGENT_INSTRUCTIONS_PATH / WORKSPACE_AGENT_INSTRUCTIONS_PATH",
+    "lineStart": 9,
+    "lineEnd": 16,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "runtime-assembly",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server resolves skills, workspace instructions, plugin roots, and configuration before assembling runtime inputs.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/thread-runtime-config.ts",
+    "symbol": "resolveThreadRuntimeCommandConfig",
+    "lineStart": 164,
+    "lineEnd": 243,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "runtime-order",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The assembled instruction string places standard instructions, tool and plugin contributions, then the two AGENTS layers in a documented order.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/threads/thread-runtime-config.ts",
+    "symbol": "instructions",
+    "lineStart": 248,
+    "lineEnd": 314,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "skill-discovery",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Workspace skills are discovered from .bb/skills through a bounded host file-list operation.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/skills/workspace-skills.ts",
+    "symbol": "listWorkspaceSkills",
+    "lineStart": 73,
+    "lineEnd": 127,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "skill-precedence",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Skill provenance records project, user, plugin, and built-in sources, with earlier inherited roots winning and project names shadowing global names.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/skills/injected-skills.ts",
+    "symbol": "resolveInjectedSkills",
+    "lineStart": 780,
+    "lineEnd": 841,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "skill-adapters",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Runtime skill roots validate and shape the same resolved skill sources for different providers.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/agent-runtime/src/runtime-skill-roots.ts",
+    "symbol": "resolveRuntimeSkillRoots",
+    "lineStart": 28,
+    "lineEnd": 107,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "acp-skill-adapter",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The ACP adapter presents skill names, descriptions, and paths as text and asks the provider to read the selected skill.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/agent-runtime/src/adapters/acp/adapter.ts",
+    "symbol": "buildSkillInstructions",
+    "lineStart": 450,
+    "lineEnd": 488,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "tool-registration",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "Plugin agent tools register names and JSON schemas, with collision checks and configuration resolved at a session boundary.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/plugins/plugin-api.ts",
+    "symbol": "registerTool",
+    "lineStart": 809,
+    "lineEnd": 888,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "tool-dispatch",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The server authenticates a daemon and thread, gives the built-in environment tool precedence, then invokes a selected plugin tool.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/internal/tool-calls.ts",
+    "symbol": "handleToolCall",
+    "lineStart": 49,
+    "lineEnd": 113,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "plugin-cli-skill",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "BB generates a plugin-commands SKILL.md as a separate teaching surface for plugin CLI commands.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/server/src/services/plugins/plugin-commands-skill.ts",
+    "symbol": "writePluginCommandsSkill",
+    "lineStart": 8,
+    "lineEnd": 87,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "cli-proxy",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The plugin CLI proxy forwards command metadata, arguments, working directory, and thread or project context to the server.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/cli/src/plugin-cli-proxy.ts",
+    "symbol": "runPluginCliCommand",
+    "lineStart": 214,
+    "lineEnd": 280,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "sdk-admin",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The SDK skills area exposes list, content, file, registry, update, and remove operations over the server transport.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "packages/sdk/src/areas/skills.ts",
+    "symbol": "skills.list / skills.content",
+    "lineStart": 103,
+    "lineEnd": 182,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  },
+  {
+    "id": "cli-admin",
+    "type": "bb-source",
+    "label": "Observed",
+    "statement": "The bb thread compact and clear-goal commands call administrative SDK operations rather than provider tool dispatch.",
+    "snapshot": {
+      "branch": "feature/bots",
+      "commit": "3a66656a038b4ee893b59e307b366c00cc306b77",
+      "dirty": true,
+      "observedAt": "2026-08-15"
+    },
+    "path": "apps/cli/src/commands/thread/actions.ts",
+    "symbol": "compactThread / clearThreadGoal",
+    "lineStart": 519,
+    "lineEnd": 562,
+    "windowSha256": "TO_BE_COMPUTED_BY_SOURCE_AUDIT",
+    "public": {
+      "status": "unverified",
+      "url": null,
+      "rawUrl": null,
+      "verifiedAt": null
+    }
+  }
+]
