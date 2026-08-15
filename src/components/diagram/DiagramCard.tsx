@@ -23,10 +23,19 @@ export function DiagramCard({ definition }: { definition: DiagramDefinition }) {
   useEffect(() => {
     if (!nearViewport || svg || error) return
     let cancelled = false
-    import('./renderSanitizedSvg').then(({ renderSanitizedDiagram }) => {
-      if (cancelled) return
-      try { setSvg(renderSanitizedDiagram(definition.code).svg) } catch (cause) { setError(cause instanceof Error ? cause.message : 'Unable to render this diagram.') }
-    }).catch(() => setError('The diagram renderer could not load.'))
+    Promise.all([
+      import('../../generated/diagram-manifest'),
+      import('./renderSanitizedSvg'),
+    ]).then(async ([{ diagramManifest }, { sanitizeFetchedDiagram }]) => {
+      const assetUrl = diagramManifest[definition.code]
+      if (!assetUrl) throw new Error('The diagram asset is unavailable.')
+      const response = await fetch(assetUrl)
+      if (!response.ok) throw new Error(`The diagram asset could not be loaded (${response.status}).`)
+      const rendered = sanitizeFetchedDiagram(await response.text()).svg
+      if (!cancelled) setSvg(rendered)
+    }).catch((cause) => {
+      if (!cancelled) setError(cause instanceof Error ? cause.message : 'The diagram asset could not load.')
+    })
     return () => { cancelled = true }
   }, [definition.code, error, nearViewport, svg])
 
